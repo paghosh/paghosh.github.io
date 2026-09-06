@@ -1,0 +1,1000 @@
+# Publications data for paghosh.github.io
+# Source of record for titles and author order: _cv_body.tex (2026 promotion dossier CV).
+# Volume, issue, pages and DOIs verified against Crossref.
+# Abstracts are copied verbatim from the published PDFs unless marked otherwise.
+
+# ---------------------------------------------------------------------------
+# Refereed journal publications: Labor and Development Economics
+# ---------------------------------------------------------------------------
+
+- id: ghosh2026flu
+  title: "Stay healthy, stay employed: how flu vaccination might impact women's earnings"
+  authors: ["Pallab Ghosh", "Firat Demir", "Myongjin Kim", "Ahmed Chaudhuri", "Junying Zhao"]
+  journal: "Applied Economics"
+  year: 2026
+  pages: "1-16"
+  doi: "10.1080/00036846.2026.2656819"
+  pdf: "/assets/papers/ghosh2026flu.pdf"
+  area: labor
+  status: published
+  featured: false
+  abstract: >
+    This paper examines the effects of state-level adult and child seasonal flu vaccination rates on
+    hourly real wages for women. Using an IV method to address possible endogeneity, we find a
+    significantly positive effect of adult vaccination on women's wages. Furthermore, we show that this
+    effect is stronger for working mothers in age groups 16-24 and 25-44, and those with younger
+    children aged 6 months-12 years. We also find that children's vaccination has a significantly
+    positive effect on mothers' wages and that this effect is stronger for women with younger children.
+    The results also show that the positive effect is particularly larger for non-college educated
+    women, aged 16-44 with at least one child. These effects are also stronger for mothers with younger
+    children.
+  bibtex: |
+    @article{ghosh2026flu,
+      author  = {Ghosh, Pallab and Demir, Firat and Kim, Myongjin and Chaudhuri, Ahmed and Zhao, Junying},
+      title   = {Stay healthy, stay employed: how flu vaccination might impact women's earnings},
+      journal = {Applied Economics},
+      year    = {2026},
+      pages   = {1--16},
+      doi     = {10.1080/00036846.2026.2656819}
+    }
+
+- id: demir2026missingwomen
+  title: "The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011-2014"
+  authors: ["Firat Demir", "Pallab Ghosh", "Zhengang Xu"]
+  journal: "Journal of Comparative Economics"
+  year: 2026
+  volume: "54"
+  issue: "1"
+  pages: "194-213"
+  doi: "10.1016/j.jce.2025.09.003"
+  pdf: "/assets/papers/demir2026missingwomen.pdf"
+  area: labor
+  status: published
+  featured: true
+  abstract: >
+    This paper examines the effects of political protests during the Egyptian revolution between 2011
+    and 2014 on "missing women" in Egypt. The term "missing women" refers to the number of women missing
+    in population because of sex-selective abortions, excess female mortality and lower survival rates
+    caused by gender discrimination, infanticide, neglect, malnutrition, domestic violence, unequal
+    healthcare access and provision, and poor treatment. We hypothesize that increased female
+    participation in these protests improved women's empowerment and helped reduce missing women. Using
+    a difference-in-differences analysis, our identification strategy is based on protest intensity
+    heterogeneity, and changes in missing women for the age group of [0-1] before and after the protests
+    across different governorates in urban and rural areas. We find convincing causal evidence that the
+    number of missing women decreased significantly in high protest intensity governorates. Based on
+    protest heterogeneity across different periods, we also show that this effect was most visible after
+    the fourth and final phase of protests. As for possible channels, we find that domestic violence
+    during pregnancy incidence fell significantly in treatment areas, while both relative vaccination
+    rate of girls aged [0-1] as well as women's empowerment increased significantly.
+  bibtex: |
+    @article{demir2026missingwomen,
+      author  = {Demir, Firat and Ghosh, Pallab and Xu, Zhengang},
+      title   = {The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011--2014},
+      journal = {Journal of Comparative Economics},
+      year    = {2026},
+      volume  = {54},
+      number  = {1},
+      pages   = {194--213},
+      doi     = {10.1016/j.jce.2025.09.003}
+    }
+
+- id: ghosh2023routine
+  title: "The Puzzle of Changes in Employment and Wages in Routine Task-intensive Occupations"
+  authors: ["Pallab Ghosh", "Zexuan Liu"]
+  journal: "Empirical Economics"
+  year: 2023
+  volume: "65"
+  issue: "4"
+  pages: "1965-1980"
+  doi: "10.1007/s00181-023-02394-x"
+  pdf: "/assets/papers/ghosh2023routine.pdf"
+  area: labor
+  status: published
+  featured: false
+  abstract: >
+    Autor and Dorn (Am Econ Rev 103(5):1553-1597, 2013) provide an explanation of the polarization of
+    US employment and wages for the period 1980-2005. Using the 1980 Census and 2005 American Community
+    Survey data, this study replicates the estimation results of Autor and Dorn (2013) for employment
+    polarization in all major occupation groups and qualitatively matches the wage polarization results.
+    Also, we investigate the puzzle of why employment and wages changed in opposite directions only in
+    clerical and administrative support occupations in 1980-2005.
+  bibtex: |
+    @article{ghosh2023routine,
+      author  = {Ghosh, Pallab and Liu, Zexuan},
+      title   = {The Puzzle of Changes in Employment and Wages in Routine Task-intensive Occupations},
+      journal = {Empirical Economics},
+      year    = {2023},
+      volume  = {65},
+      number  = {4},
+      pages   = {1965--1980},
+      doi     = {10.1007/s00181-023-02394-x}
+    }
+
+- id: demir2020breastfeeding
+  title: "Effects of Motherhood Timing, Breastmilk Substitutes and Education on the Duration of Breastfeeding: Evidence from Egypt"
+  authors: ["Firat Demir", "Pallab Ghosh", "Zexuan Liu"]
+  journal: "World Development"
+  year: 2020
+  volume: "133"
+  pages: "105014"
+  doi: "10.1016/j.worlddev.2020.105014"
+  pdf: "/assets/papers/demir2020breastfeeding.pdf"
+  area: labor
+  status: published
+  featured: true
+  citations: 16
+  abstract: >
+    Breastfeeding has significant health and human capital effects on both mothers and infants. However,
+    breastfeeding rates vary significantly within and across countries as societal, political, economic
+    and cultural factors along with individual choices shape the breastfeeding practices. Using data from
+    the Egyptian Demographic and Health Surveys, this study examines the effects of first motherhood
+    timing, availability of breastmilk substitutes, and mothers' education levels on breastfeeding
+    duration in a major developing country, Egypt. The empirical analysis, which corrects for the
+    estimation errors that plagued previous research, shows that delaying the first motherhood timing
+    and increasing the availability of infant formulas have statistically significant negative effects
+    on breastfeeding duration. Furthermore, breastfeeding duration is found to be decreasing in mothers'
+    education levels.
+  bibtex: |
+    @article{demir2020breastfeeding,
+      author  = {Demir, Firat and Ghosh, Pallab and Liu, Zexuan},
+      title   = {Effects of Motherhood Timing, Breastmilk Substitutes and Education on the Duration of Breastfeeding: Evidence from Egypt},
+      journal = {World Development},
+      year    = {2020},
+      volume  = {133},
+      pages   = {105014},
+      doi     = {10.1016/j.worlddev.2020.105014}
+    }
+
+- id: ghosh2020coauthorship
+  title: "Coauthorship and the Gender Gap in Top Economics Journal Publications"
+  authors: ["Pallab Ghosh", "Zexuan Liu"]
+  journal: "Applied Economics Letters"
+  year: 2020
+  volume: "27"
+  issue: "7"
+  pages: "580-590"
+  doi: "10.1080/13504851.2019.1644420"
+  pdf: "/assets/papers/ghosh2020coauthorship.pdf"
+  area: labor
+  status: published
+  featured: true
+  citations: 46
+  abstract: >
+    Coauthorship has become the new norm in academics since the early 1970s because it enhances
+    productivity. However, the gender gap in economics journal publication continues to persist, which
+    explains why there are fewer women than men in the economics profession. This study investigates
+    the role of coauthorship in the gender gap in top economics journals for untenured faculty members
+    in the US. We construct a unique dataset from the CVs of academic economists from the top 96
+    PhD-granting economics departments in the US. Our results suggest that, compared to men, women are
+    matched with less productive unique coauthors because women begin their academic careers in
+    lower-ranked economics departments than men, which is associated with institutional gender bias.
+    This poor-quality matching can explain approximately 0.60 fewer publications in the top 20
+    economics journals during the untenured period.
+  bibtex: |
+    @article{ghosh2020coauthorship,
+      author  = {Ghosh, Pallab and Liu, Zexuan},
+      title   = {Coauthorship and the Gender Gap in Top Economics Journal Publications},
+      journal = {Applied Economics Letters},
+      year    = {2020},
+      volume  = {27},
+      number  = {7},
+      pages   = {580--590},
+      doi     = {10.1080/13504851.2019.1644420}
+    }
+
+- id: ghosh2020minimumwage
+  title: "Do State Minimum Wages Affect Incarceration Rate?"
+  authors: ["Pallab Ghosh", "Gary A. Hoover", "Zexuan Liu"]
+  journal: "Southern Economic Journal"
+  year: 2020
+  volume: "86"
+  issue: "3"
+  pages: "845-872"
+  doi: "10.1002/soej.12400"
+  pdf: "/assets/papers/ghosh2020minimumwage.pdf"
+  area: labor
+  status: published
+  featured: false
+  abstract: >
+    Because of historically unprecedented increases in the prison population since the late 1970s, the
+    United States has the highest incarceration rate in the world. Using Becker's (1968) framework on
+    crime, this study investigates the causal relationship between incarceration rates and state
+    minimum wages. Our identification strategy consists of a state-level fixed effects model and Autor
+    and Dorn's (2013) two-stage least-squares (2SLS) approach. Using the historical local industry
+    structure, we predict the change in employment shares of manual task-intensive occupations and use
+    those as an instrument for state minimum wages. The fixed effects and 2SLS estimates suggest that a
+    one-dollar increase in state minimum wage leads to approximately 12-25 fewer incarcerations per
+    100,000 state residents. Estimates of the heterogeneous impacts by race and gender indicate that
+    the aggregate impact of state minimum wages is entirely driven by men.
+  bibtex: |
+    @article{ghosh2020minimumwage,
+      author  = {Ghosh, Pallab and Hoover, Gary A. and Liu, Zexuan},
+      title   = {Do State Minimum Wages Affect Incarceration Rate?},
+      journal = {Southern Economic Journal},
+      year    = {2020},
+      volume  = {86},
+      number  = {3},
+      pages   = {845--872},
+      doi     = {10.1002/soej.12400}
+    }
+
+- id: ghosh2018recession
+  title: "The Short-Run Effects of the Great Recession on Crime"
+  authors: ["Pallab Ghosh"]
+  journal: "Journal of Economics, Race, and Policy"
+  year: 2018
+  volume: "1"
+  issue: "2-3"
+  pages: "92-111"
+  doi: "10.1007/s41996-018-0014-8"
+  pdf: "/assets/papers/ghosh2018recession.pdf"
+  area: labor
+  status: published
+  featured: false
+  abstract: >
+    The Great Recession had the most severe impacts on the unemployment rates of the racial and ethnic
+    minorities as well as less-educated young men. There were cross-sectional variations of these
+    disproportionate adverse impacts. This study exploits the changes in regional variations of the
+    unemployment rates of unskilled men before and after the Great Recession to explain the sharp fall
+    in aggregate crime rates in the post-recession recovery period. Our 2SLS approach uses plausible
+    exogenous sources of changes in the state employment growth of minimum wage workers induced by the
+    national employment growth of minimum wage workers. We find that changes in regional variations of
+    the unemployment rates of unskilled young men can explain approximately 25% of the fall in the
+    aggregate crime rate in the post-recession expansionary period. Estimating the heterogeneous
+    impacts of unskilled young men by race, we find that the fall in aggregate crime rate was mainly
+    driven by the changes in the unemployment rates of young black men.
+  bibtex: |
+    @article{ghosh2018recession,
+      author  = {Ghosh, Pallab},
+      title   = {The Short-Run Effects of the Great Recession on Crime},
+      journal = {Journal of Economics, Race, and Policy},
+      year    = {2018},
+      volume  = {1},
+      number  = {2--3},
+      pages   = {92--111},
+      doi     = {10.1007/s41996-018-0014-8}
+    }
+
+- id: ghosh2016korea
+  title: "Decomposition of the Changes in Korean Wage Inequality During the Period 1998-2007"
+  authors: ["Pallab Ghosh", "JaeYoon Lee"]
+  journal: "Journal of Labor Research"
+  year: 2016
+  volume: "37"
+  issue: "1"
+  pages: "1-28"
+  doi: "10.1007/s12122-015-9217-9"
+  pdf: "/assets/papers/ghosh2016korea.pdf"
+  area: labor
+  status: published
+  featured: false
+  abstract: >
+    South Korea experienced a steep increase in wage inequality between the Asian financial crisis in
+    1997 and the global financial crisis in 2008. This paper investigates the causes of the sharp change
+    during that time period by looking at the contributions of changes in the distributions of
+    schooling and unionization. The effects are estimated applying two robust distributional function
+    based decomposition methods on Korean Labor and Panel Survey data for the time period 1998-2007.
+    The results suggest changes in the distribution of schooling can explain about 10 % of the changes
+    in the 90/50 percentile wage gap. The declining unionization rate does not have much impact on the
+    upward trend of Korean wage inequality. In addition, aggregate decomposition results suggest that
+    changes in labor force composition can explain a significant proportion of the total wage changes
+    in the upper-tail of the distribution. Based on our findings we provide a list of policy
+    recommendations to address the wage inequality issue in Korea.
+  bibtex: |
+    @article{ghosh2016korea,
+      author  = {Ghosh, Pallab and Lee, JaeYoon},
+      title   = {Decomposition of the Changes in Korean Wage Inequality During the Period 1998--2007},
+      journal = {Journal of Labor Research},
+      year    = {2016},
+      volume  = {37},
+      number  = {1},
+      pages   = {1--28},
+      doi     = {10.1007/s12122-015-9217-9}
+    }
+
+- id: ghosh2014humancapital
+  title: "The Contribution of Human Capital Variables to Changes in Wage Distribution Function"
+  authors: ["Pallab Ghosh"]
+  journal: "Labour Economics"
+  year: 2014
+  volume: "28"
+  pages: "58-69"
+  doi: "10.1016/j.labeco.2014.03.006"
+  pdf: "/assets/papers/ghosh2014humancapital.pdf"
+  area: labor
+  status: published
+  featured: true
+  citations: 12
+  abstract: >
+    This paper proposes a semi-parametric procedure to determine the contribution of human capital
+    variables in explaining the changes of U.S. wage distribution function over the period of
+    1990-2000. The effects of these factors are estimated by using the Chamberlain's two stage Box-Cox
+    quantile regression approach. One of the main contributions of this paper is that it relaxes the
+    linearity assumption of the conditional quantile function to estimate the counterfactual wage
+    distribution function consistently. This paper also shows that the proposed method provides better
+    estimates of capturing the effects of human capital variables in the two tails of the wage
+    distribution while the results of other parts of the distribution are comparable with the estimates
+    of the previous study which used the linear quantile regression approach. To summarize, these
+    results suggest that this proposed approach is more applicable in cases where the behavior of the
+    tails of the distribution bear much importance.
+  bibtex: |
+    @article{ghosh2014humancapital,
+      author  = {Ghosh, Pallab},
+      title   = {The Contribution of Human Capital Variables to Changes in Wage Distribution Function},
+      journal = {Labour Economics},
+      year    = {2014},
+      volume  = {28},
+      pages   = {58--69},
+      doi     = {10.1016/j.labeco.2014.03.006}
+    }
+
+# ---------------------------------------------------------------------------
+# Refereed journal publications: Econometrics
+# ---------------------------------------------------------------------------
+
+- id: ghosh2021boxcox
+  title: "Box-Cox Power Transformation Unconditional Quantile Regressions With An Application on Wage Inequality"
+  authors: ["Pallab Ghosh"]
+  journal: "Journal of Applied Statistics"
+  year: 2021
+  volume: "48"
+  issue: "16"
+  pages: "3086-3101"
+  doi: "10.1080/02664763.2020.1795817"
+  pdf: "/assets/papers/ghosh2021boxcox.pdf"
+  area: econometrics
+  status: published
+  featured: false
+  abstract: >
+    This study proposes a semi-parametric estimation method, Box-Cox power transformation unconditional
+    quantile regression, to estimate the impact of changes in the distribution of the explanatory
+    variables on the unconditional quantile of the outcome variable. The proposed method consists of
+    running a nonlinear regression of the recentered influence function (RIF) of the outcome variable
+    on the explanatory variables. We also show the asymptotic properties of the proposed estimator and
+    apply the estimation method to address an existing puzzle in labor economics: why the 50th/10th
+    percentile wage gap has been falling in the USA since the late 1980s. Our results show that
+    declining unionization can explain approximately 10% of the decline in the 50/10 wage gap in
+    1990-2000 and 23% in 2000-2010.
+  bibtex: |
+    @article{ghosh2021boxcox,
+      author  = {Ghosh, Pallab},
+      title   = {Box-Cox Power Transformation Unconditional Quantile Regressions With An Application on Wage Inequality},
+      journal = {Journal of Applied Statistics},
+      year    = {2021},
+      volume  = {48},
+      number  = {16},
+      pages   = {3086--3101},
+      doi     = {10.1080/02664763.2020.1795817}
+    }
+
+- id: ghosh2021heterogeneous
+  title: "Heterogeneous Endogeneity"
+  authors: ["Pallab Ghosh", "Kevin Grier", "Jaeho Kim"]
+  journal: "Statistical Papers"
+  year: 2021
+  volume: "62"
+  issue: "2"
+  pages: "847-886"
+  doi: "10.1007/s00362-019-01116-9"
+  pdf: "/assets/papers/ghosh2021heterogeneous.pdf"
+  area: econometrics
+  status: published
+  featured: false
+  abstract: >
+    We define heterogeneous endogeneity as the case where a potentially endogenous regressor is
+    endogenous for some sub-groups of the data but exogenous for other subgroups. We derive an
+    estimator and test procedure based on the control function approach to deal with the phenomenon.
+    We show that accounting for heterogeneous endogeneity can greatly increase the power of endogeneity
+    tests and increase the precision of our estimator over traditional IV. While the gains get larger
+    as the instrument gets weaker and as the relative size of the non-endogenous subgroup gets larger,
+    we find efficiency gains even when the underlying instrument is very strong. We illustrate our
+    approach with an example using data from Abaide et al. (Econometrica 70:91-117).
+  bibtex: |
+    @article{ghosh2021heterogeneous,
+      author  = {Ghosh, Pallab and Grier, Kevin and Kim, Jaeho},
+      title   = {Heterogeneous Endogeneity},
+      journal = {Statistical Papers},
+      year    = {2021},
+      volume  = {62},
+      number  = {2},
+      pages   = {847--886},
+      doi     = {10.1007/s00362-019-01116-9}
+    }
+
+- id: baltagi2019partial
+  title: "Partial Distributional Policy Effects Under Endogeneity"
+  authors: ["Badi H. Baltagi", "Pallab Ghosh"]
+  journal: "Sankhya B"
+  year: 2019
+  volume: "81"
+  issue: "S1"
+  pages: "123-145"
+  doi: "10.1007/s13571-019-00190-1"
+  pdf: "/assets/papers/baltagi2019partial.pdf"
+  area: econometrics
+  status: published
+  featured: false
+  abstract: >
+    Rothe (Econometrica 80, 2269-2301 2012) introduces a new class of parameters called "Partial
+    Distributional Policy Effects" (PPE) to estimate the impact on the marginal distribution of an
+    outcome variable due to a change in the unconditional distribution of a single covariate. Since the
+    strict exogeneity assumption of all covariates makes this approach less applicable in empirical
+    research, we propose the identification of the PPEs for a continuous endogenous explanatory
+    variable using the control variable approach developed by Imbens and Newey (Econometrica 77,
+    1481-1512 2009). We also apply this proposed control variable PPE approach to investigate how
+    poverty and black-white racial wage gaps contribute to the steep increase in the incarceration rate
+    of black men over the period 1980-2010. Our control variable PPE estimates suggest that although
+    the fall in the racial wage gap does not explain the changes in the incarceration rate of black
+    men, changes in the poverty rate contribute about one-third of the steep increase in the
+    incarceration rate at the upper-tail of the distribution.
+  bibtex: |
+    @article{baltagi2019partial,
+      author  = {Baltagi, Badi H. and Ghosh, Pallab},
+      title   = {Partial Distributional Policy Effects Under Endogeneity},
+      journal = {Sankhya B},
+      year    = {2019},
+      volume  = {81},
+      number  = {S1},
+      pages   = {123--145},
+      doi     = {10.1007/s13571-019-00190-1}
+    }
+
+- id: baltagi2017replication
+  title: "Replication of Unconditional Quantile Regressions by Firpo, Fortin and Lemieux (2009)"
+  authors: ["Badi H. Baltagi", "Pallab Ghosh"]
+  journal: "Journal of Applied Econometrics"
+  year: 2017
+  volume: "32"
+  issue: "1"
+  pages: "218-223"
+  doi: "10.1002/jae.2477"
+  pdf: "/assets/papers/baltagi2017replication.pdf"
+  area: econometrics
+  status: published
+  featured: true
+  citations: 24
+  abstract: >
+    This paper is a narrow replication of Firpo, Fortin and Lemieux (Unconditional quantile
+    regressions. Econometrica 2009; 77(3): 953-973), who propose a new estimation method, called
+    "unconditional quantile regressions". Using their empirical example, we confirm their results for
+    the effects of unionization on US wage inequality during the period 1983-1985 for both conditional
+    and unconditional quantile regressions. In addition, this paper applies the proposed estimation
+    method to another paper by Autor, Katz and Kearney (Trends in US wage inequality: revising the
+    revisionists. Review of Economics and Statistics 2008; 90(2): 300-323). The latter paper looks at
+    measures of wage inequality in the US labor market data over the period 1963-2005.
+  bibtex: |
+    @article{baltagi2017replication,
+      author  = {Baltagi, Badi H. and Ghosh, Pallab},
+      title   = {Replication of Unconditional Quantile Regressions by Firpo, Fortin and Lemieux (2009)},
+      journal = {Journal of Applied Econometrics},
+      year    = {2017},
+      volume  = {32},
+      number  = {1},
+      pages   = {218--223},
+      doi     = {10.1002/jae.2477}
+    }
+
+# ---------------------------------------------------------------------------
+# Refereed journal publications: Health Economics and Policy
+# ---------------------------------------------------------------------------
+
+- id: kim2025vaccine
+  title: "Vaccine Production and Innovation: Insights from Tort Reform and Medicare Expansion"
+  authors: ["Myongjin Kim", "Firat Demir", "Ahmed El Fatmaoui", "Qi Ge", "Pallab Ghosh", "Junying Zhao"]
+  journal: "Economics of Innovation and New Technology"
+  year: 2025
+  volume: "35"
+  issue: "4"
+  pages: "578-605"
+  doi: "10.1080/10438599.2025.2511865"
+  pdf: "/assets/papers/kim2025vaccine.pdf"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Leveraging a unique dataset on vaccine production and development, this paper assesses the
+    effectiveness of two policy interventions in stimulating firms' output and innovation, including
+    (1) a tort reform that reduces vaccine manufacturers' product liability; and (2) an expansion of
+    Medicare's coverage of vaccine products. A difference-in-differences analysis indicates that both
+    policies significantly boost vaccine production, with the impact of Medicare coverage expansion
+    being 3-6 times larger in magnitude. There is also evidence suggesting that vaccine manufacturers
+    are more likely to invest in R&D in response to this expansion, and the effect is likely driven by
+    the underlying market structure.
+  bibtex: |
+    @article{kim2025vaccine,
+      author  = {Kim, Myongjin and Demir, Firat and El Fatmaoui, Ahmed and Ge, Qi and Ghosh, Pallab and Zhao, Junying},
+      title   = {Vaccine Production and Innovation: Insights from Tort Reform and Medicare Expansion},
+      journal = {Economics of Innovation and New Technology},
+      year    = {2025},
+      volume  = {35},
+      number  = {4},
+      pages   = {578--605},
+      doi     = {10.1080/10438599.2025.2511865}
+    }
+
+- id: zhao2026ihs
+  title: "Empirical Evidence and Conceptual Framework to Address the Indian Health Service Underfunding Challenge"
+  authors: ["Junying Zhao", "Rashmi Jaggad", "James R. Kennedye", "Pallab Ghosh", "Kylie Stewart", "Janis E. Campbell"]
+  journal: "Value in Health"
+  year: 2026
+  volume: "29"
+  issue: "3"
+  pages: "403-412"
+  doi: "10.1016/j.jval.2025.10.003"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Objectives: The Indian Health Service (IHS) provides services to American Indian and Alaska Native
+    individuals. However, IHS faces a longstanding underfunding problem. This article examines the
+    extent, reasons, and alternative solutions for the IHS underfunding problem. Methods: We used the
+    most recent 15-year quantitative and qualitative data from a fiscal administration perspective and
+    established a conceptual framework from an economic perspective to better understand the nature of
+    financing IHS. We applied the framework, especially efficiency and equity criteria, to examine the
+    justifiability of proposed benchmarks for IHS budgeting and compare proposed solutions. Results:
+    First, we identified budget planning and approving steps where significant IHS budget cuts occurred
+    and why. Second, the United States has a federal Indian trust responsibility for American Indian
+    and Alaska Native healthcare and thus mandatory spending in principle. However, in practice, it has
+    been a discretionary spending decision for the United States to maximize social welfare subject to
+    limited fiscal resources. Third, between the 2 economic criteria for resource allocation, vertical
+    equity, instead of allocative efficiency, justifies more IHS appropriations. Fourth, entitlement
+    mandatory spending on IHS was proposed by legislators during 2001 to 2004 but failed to receive
+    Congressional votes. Nonentitlement mandatory spending and sequestration exemption were proposed by
+    the President but were unapproved for fiscal year 2024. Conclusions: To our knowledge, this article
+    is the first to evaluate discrepancies in IHS budget proposals, before and during enactment, to
+    elucidate the stages at which underfunding may occur and the implications for future research and
+    policy making by the IHS, Tribal Nations, and US Congress.
+  bibtex: |
+    @article{zhao2026ihs,
+      author  = {Zhao, Junying and Jaggad, Rashmi and Kennedye, James R. and Ghosh, Pallab and Stewart, Kylie and Campbell, Janis E.},
+      title   = {Empirical Evidence and Conceptual Framework to Address the Indian Health Service Underfunding Challenge},
+      journal = {Value in Health},
+      year    = {2026},
+      volume  = {29},
+      number  = {3},
+      pages   = {403--412},
+      doi     = {10.1016/j.jval.2025.10.003}
+    }
+
+- id: zhao2025advice
+  title: "Power of Public Health Advice: Effectiveness and Spillover Effects of Federal Vaccine Recommendations"
+  authors: ["Junying Zhao", "Ahmed El Fatmaoui", "Mahla Shourian", "B. Lor", "Pallab Ghosh"]
+  journal: "Public Health in Practice"
+  year: 2025
+  volume: "10"
+  pages: "100667"
+  doi: "10.1016/j.puhip.2025.100667"
+  pdf: "/assets/papers/zhao2025advice.pdf"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Objectives: This paper focuses on the national-level, inexpensive, demand-side vaccine policy,
+    federal recommendations. It evaluates the effectiveness of 2008 and 2010 influenza vaccine
+    recommendations, the spillover effect of the 2009 H1N1 vaccine recommendation on influenza
+    vaccination, and heterogeneous policy effects across individual characteristics. Study design:
+    Observational study with before-after comparison assessing changes in vaccination following policy
+    implementation. Methods: We used nationally representative 2004-2015 NHIS data on 77,361, 23,653,
+    and 238,866 individuals in age groups targeted by the 2008, 2009, and 2010 policies, respectively.
+    Using the Linear Probability Model with fixed effects, we estimated policy effectiveness, spillover
+    effects, and heterogeneous effects across individual characteristics. Results: Both 2008 and 2010
+    influenza vaccine recommendations boosted influenza vaccination likelihood by 20.9-26.5 % among
+    children and 5.2-6.6 % among older adults. The 2009 H1N1 vaccine recommendation had a positive
+    spillover effect, with a 5.7-9.8 % increase in influenza vaccination likelihood among younger
+    adults. Low influenza vaccination likelihoods exist across demographic and socioeconomic
+    characteristics: Children uninsured or privately insured, White, and low-income; Adults uninsured
+    or publicly insured, White, African and Hispanic American, male, childless, self-reported poor or
+    excellent health, low-educated, and low-income. Conclusions: Future policies may address the cost
+    barriers faced by the uninsured, and multi-level non-cost barriers experienced by privately insured
+    children and publicly insured adults. Future policies may consider extending beyond the federal
+    recommendation, such as implementing simultaneous anti-poverty policies, to achieve minimum
+    coverage and utilize the spillover effects of one vaccine policy to maximize coverage of other
+    vaccines. Future research may investigate potential policy spillover effects among influenza,
+    COVID-19, RSV, and new vaccines.
+  bibtex: |
+    @article{zhao2025advice,
+      author  = {Zhao, Junying and El Fatmaoui, Ahmed and Shourian, Mahla and Lor, B. and Ghosh, Pallab},
+      title   = {Power of Public Health Advice: Effectiveness and Spillover Effects of Federal Vaccine Recommendations},
+      journal = {Public Health in Practice},
+      year    = {2025},
+      volume  = {10},
+      pages   = {100667},
+      doi     = {10.1016/j.puhip.2025.100667}
+    }
+
+# NOTE: Health Affairs Forefront is an editor reviewed commentary platform. The DOI below was
+# found in Crossref (record type "posted content", issued 2025-09-02). The healthaffairs.org page
+# is behind a bot check, so the abstract below is a summary, not the verbatim text.
+- id: zhao2025forefront
+  title: "The Indian Health Service Is Chronically Underfunded. Here Is How To Close The Gap"
+  authors: ["Junying Zhao", "Rashmi Jaggad", "Pallab Ghosh", "James R. Kennedye", "Kylie Stewart", "Janis E. Campbell"]
+  journal: "Health Affairs Forefront"
+  year: 2025
+  doi: "10.1377/forefront.20250827.319208"
+  url: "https://www.healthaffairs.org/content/forefront"
+  area: health
+  status: published
+  featured: false
+  note: "Editor reviewed commentary, not a peer reviewed research article."
+  abstract: >
+    This commentary explains why the Indian Health Service, which serves American Indian and Alaska
+    Native people under the federal trust responsibility, has remained chronically underfunded for
+    decades. It traces where in the federal budget planning and appropriations process the shortfalls
+    arise and contrasts the discretionary funding the agency actually receives with the mandatory
+    spending its trust obligation implies. Drawing on the authors' companion research in Value in
+    Health, it lays out concrete legislative and administrative options, including mandatory spending
+    and sequestration exemption, that could close the funding gap. (Abstract summarized from the
+    publisher page.)
+  bibtex: |
+    @misc{zhao2025forefront,
+      author       = {Zhao, Junying and Jaggad, Rashmi and Ghosh, Pallab and Kennedye, James R. and Stewart, Kylie and Campbell, Janis E.},
+      title        = {The Indian Health Service Is Chronically Underfunded. Here Is How To Close The Gap},
+      howpublished = {Health Affairs Forefront},
+      year         = {2025},
+      doi          = {10.1377/forefront.20250827.319208}
+    }
+
+- id: zhao2025medicaid
+  title: "Did the Medicaid expansion improve immunization among pregnant women?"
+  authors: ["Junying Zhao", "Rashmi Jaggad", "Ahmed El Fatmaoui", "Pallab Ghosh"]
+  journal: "Preventive Medicine Reports"
+  year: 2025
+  volume: "58"
+  pages: "103214"
+  doi: "10.1016/j.pmedr.2025.103214"
+  pdf: "/assets/papers/zhao2025medicaid.pdf"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Objectives: Affordable Care Act (ACA) Medicaid expansion increased financial eligibility of
+    low-income individuals. Its effects are mixed on influenza vaccination and unknown for Tetanus,
+    Diphtheria, and Acellular Pertussis (Tdap) vaccination among pregnant women in the United States.
+    We aim to address mixed and missing evidence in literature. Methods: We merged 44,320 pregnant
+    women from 2011 to 15 Pregnancy Risk Assessment Monitoring System with National Welfare Data by
+    residency. Treatment group included Medicaid enrollees in post-ACA expansion states. Control
+    included non-Medicaid enrollees in expansion states and all individuals in non-expansion states. We
+    employed triple-difference method to estimate Medicaid expansion treatment effects on individual
+    vaccination probabilities, and associations with socioeconomics and demographics. Results:
+    Treatment group did not differ from control to vaccinate due to Medicaid expansion. Additionally,
+    post-ACA Medicaid enrollees were 4.5-9 % less likely to vaccinate than pre-ACA non-Medicaid
+    enrollees. Medicaid enrollees in expansion states were 2.5 % less likely to vaccinate against
+    influenza than non-Medicaid enrollees in non-expansion states. African Americans were 4-5 % less
+    likely, while Native Americans were 3-7 % more likely, to vaccinate than counterparts. Those with
+    low parity and college education were 3.2-5.4 % and 4.8-10.6 % more likely to vaccinate.
+    Individuals in high-poverty states were 0.6 % less likely to receive the influenza vaccine.
+    Conclusions: We contributed different national data on understudied populations and the
+    triple-difference method to the literature. Income-based Medicaid expansion did not increase the
+    likelihood of vaccination among pregnant women. Non-income-based policies may target
+    Medicaid-enrolled pregnant women in expansion states for influenza vaccination. Future
+    interventions may target high-parity, low-education, and African American pregnant women in
+    high-poverty non-expansion states.
+  bibtex: |
+    @article{zhao2025medicaid,
+      author  = {Zhao, Junying and Jaggad, Rashmi and El Fatmaoui, Ahmed and Ghosh, Pallab},
+      title   = {Did the Medicaid expansion improve immunization among pregnant women?},
+      journal = {Preventive Medicine Reports},
+      year    = {2025},
+      volume  = {58},
+      pages   = {103214},
+      doi     = {10.1016/j.pmedr.2025.103214}
+    }
+
+- id: zhao2025aian
+  title: "Multi-level Determinants of Vaccination of the American Indian and Alaska Native Population: A Comprehensive Overview"
+  authors: ["Junying Zhao", "Rashmi Jaggad", "Ying Zhang", "Janis E. Campbell", "Pallab Ghosh", "James R. Kennedye", "Tauqeer Ali"]
+  journal: "Frontiers in Public Health"
+  year: 2025
+  volume: "13"
+  pages: "1490286"
+  doi: "10.3389/fpubh.2025.1490286"
+  pdf: "/assets/papers/zhao2025aian.pdf"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Context: American Indians and Alaska Natives (AIANs) are historically disadvantaged, losing 20
+    million (95%) of their population largely through epidemics since 1,520 and continuing lower
+    overall vaccination coverage than other races. Determinants of this lower coverage are
+    underexamined. Methods: Among peer-reviewed relevant articles since 1968, 39 studied AIANs solely;
+    47 drew general population samples, including AIANs. We employed rigorous economic definitions and
+    framework of Individual Decision-Making Under Uncertainty. The Social-Ecological model identified
+    determinants and mechanisms at five levels. Findings: Individual-level determinants include: (1)
+    vaccine-preventable disease (VPD) and vaccine knowledge; (2) vaccine safety, efficacy, moral hazard
+    beliefs; (3) preferences; (4) income and post-subsidy costs. Interpersonal-level determinants
+    include others' knowledge and preferences. Organizational-level characteristics of Indian Health
+    Service, Tribal, Urban Indian (IHS/T/U) facilities include: (1) supply of vaccine products,
+    providers, services; (2) provider cultural competency, vaccine recommendations, standing orders;
+    (3) patient reminder/recall. Community-level characteristics include: (1) socioeconomics and
+    geographics; (2) information infrastructure; (3) cultural values, practices, languages; (4)
+    historical epidemic knowledge; (5) historical harms thus distrust in government, health system,
+    science. Societal-level determinants include: (1) federal recognition and entitlements; (2) tribal
+    self-determination; (3) state Medicaid enrollment; (4) structural racism. Policy recommendations:
+    Tribal interventions may (1) increase AIANs' knowledge about VPDs, vaccines, Medicaid enrollment;
+    (2) design risk/cost-benefit calculations using scientific objective probabilities of vaccine
+    safety and efficacy; (3) tailor messages to epidemic histories, narratives, values; (4) outreach by
+    trusted messengers. I/T/U organizational interventions may reduce transportation costs while
+    increasing provider supplies, cultural competency, and vaccine standing orders. Federal policies
+    may increase IHS funding, tribal infrastructure, and AIAN data representativeness while eliminating
+    structural racism and generational trauma. Conclusion: This article contributes to literature and
+    practice. It is the first multidisciplinary, comprehensive overview of multi-level determinants and
+    mechanisms of AIAN vaccination. Its findings highlight the gaps and limitations of laws and
+    policies impacting AIAN vaccination. It recommends future research, culturally-appropriate
+    interventions, and policies to close the gap to enhance AIAN vaccination and healing.
+  bibtex: |
+    @article{zhao2025aian,
+      author  = {Zhao, Junying and Jaggad, Rashmi and Zhang, Ying and Campbell, Janis E. and Ghosh, Pallab and Kennedye, James R. and Ali, Tauqeer},
+      title   = {Multi-level Determinants of Vaccination of the American Indian and Alaska Native Population: A Comprehensive Overview},
+      journal = {Frontiers in Public Health},
+      year    = {2025},
+      volume  = {13},
+      pages   = {1490286},
+      doi     = {10.3389/fpubh.2025.1490286}
+    }
+
+- id: ghosh2024hpv
+  title: "Impacts of the US CDC recommendation on human papillomavirus vaccine uptake, 2010-2015"
+  authors: ["Pallab Ghosh", "Ahmed Chaudhuri", "Janis E. Campbell", "Myongjin Kim", "Kyle Smith", "Firat Demir", "Junying Zhao"]
+  journal: "Frontiers in Public Health"
+  year: 2024
+  volume: "12"
+  pages: "1464685"
+  doi: "10.3389/fpubh.2024.1464685"
+  pdf: "/assets/papers/ghosh2024hpv.pdf"
+  area: health
+  status: published
+  featured: false
+  abstract: >
+    Objectives: As one type of vaccine policy, the effectiveness and spillover effects of the US CDC
+    vaccine recommendations are inadequately evaluated. This study aims to fully evaluate its impacts
+    on male adults, in addition to children, using better data. Design: A before-after study design to
+    examine the CDC's 2011 HPV vaccine recommendation for men aged 11-21. Data analysis:
+    Individual-level data included the 2010-2015 US National Health Interview Survey full sample of
+    7,000 male children aged 11-18, younger adults aged 19-21 and 22-25, and older adults aged 26-60.
+    Pooled cross-sectional surveys contained individual-level vaccination, socioeconomic, and
+    demographic information. Outcome variable is an individual HPV vaccination status, measured as
+    individual probability of HPV vaccination. Dummy regressions were estimated by a Linear Probability
+    Model (LPM) with fixed effects for target and non-target age groups. Results: The policy was
+    significantly associated with a 14.8% (p < 0.001) increased individual likelihood of HPV
+    vaccination for men aged 11-21. It was also associated with a modest spillover effect, a 5.6%
+    (p < 0.001) increased individual likelihood for men aged 22-25 and marginally for men aged 26-60.
+    African American men and men with poor health were 2.7 and 15.4% less likely to uptake HPV
+    vaccines than white men and men with good or fair health, respectively. Conclusion: This study
+    complements the existing policy evaluation literature on HPV vaccine recommendation among male
+    children by including adults and using better data. Findings offer comprehensive evidence of the
+    effectiveness and spillover effects of this recommendation type of federal-level policy, provide
+    policy lessons for other vaccines, and identify vulnerable subpopulations as targets for future
+    policies.
+  bibtex: |
+    @article{ghosh2024hpv,
+      author  = {Ghosh, Pallab and Chaudhuri, Ahmed and Campbell, Janis E. and Kim, Myongjin and Smith, Kyle and Demir, Firat and Zhao, Junying},
+      title   = {Impacts of the US CDC recommendation on human papillomavirus vaccine uptake, 2010--2015},
+      journal = {Frontiers in Public Health},
+      year    = {2024},
+      volume  = {12},
+      pages   = {1464685},
+      doi     = {10.3389/fpubh.2024.1464685}
+    }
+
+- id: zhao2022countermeasures
+  title: "Reforming the Countermeasures Injury Compensation Program for COVID-19 and Beyond: An Economic Perspective"
+  authors: ["Junying Zhao", "Firat Demir", "Pallab Ghosh", "Austin Earley", "Myongjin Kim"]
+  journal: "Journal of Law and the Biosciences"
+  year: 2022
+  volume: "9"
+  issue: "1"
+  pages: "lsac008"
+  doi: "10.1093/jlb/lsac008"
+  pdf: "/assets/papers/zhao2022countermeasures.pdf"
+  area: health
+  status: published
+  featured: true
+  citations: 22
+  abstract: >
+    As of Aug. 2, 2021, 1693 injury claims associated with COVID-19 medical countermeasures have been
+    filed in the Countermeasures Injury Compensation Program (CICP), of which 686 claims were related
+    to COVID-19 vaccines and urgently needed compensation decisions. However, from an economic and
+    public policy perspective, we find that the CICP design has unintended consequences: locating CICP
+    in the executive agency DHHS potentially creates a conflict of interest, and not permitting
+    judicial review generates a lack of checks and balances, both of which could jeopardize justice.
+    These fundamental problems would subsequently weaken four key performance indicators of CICP
+    compared with its judicial counterpart in the Court of Federal Claims. CICP lacks accountability,
+    transparency, and cost-effectiveness efficiency, with 94% of its total costs spent on
+    administration rather than compensation. CICP's ability to compensate is also questionable. If
+    COVID-19 claims were compensated at its historical rate, CICP would face around $21.16 million in
+    compensation outlays and $317.94 million in total outlays, 72.1 times its current balance. To
+    ensure just compensation for injured petitioners during COVID-19 and future public health
+    emergencies, we recommend Congress (1) initiate a major reform by relocating CICP from DHHS to the
+    Claims Court or (2) keep CICP within DHHS and make incremental changes by permitting judicial
+    review of DHHS administrative adjudication of CICP claims. We further recommend Congress audit and
+    adjust budgets for CICP and DHHS promptly propose an injury table for COVID-19 claims. This is the
+    first study that contributes an economic perspective to the limited literature on CICP and also
+    provides unique and rich economic data.
+  bibtex: |
+    @article{zhao2022countermeasures,
+      author  = {Zhao, Junying and Demir, Firat and Ghosh, Pallab and Earley, Austin and Kim, Myongjin},
+      title   = {Reforming the Countermeasures Injury Compensation Program for COVID-19 and Beyond: An Economic Perspective},
+      journal = {Journal of Law and the Biosciences},
+      year    = {2022},
+      volume  = {9},
+      number  = {1},
+      pages   = {lsac008},
+      doi     = {10.1093/jlb/lsac008}
+    }
+
+# ---------------------------------------------------------------------------
+# Manuscripts under revision (revise and resubmit / reject and resubmit)
+# ---------------------------------------------------------------------------
+
+- id: ghosh2026hepb
+  title: "Vaccine Hesitancy and Neonatal Mortality: The Life-Saving Power of Hepatitis B Immunization"
+  authors: ["Pallab Ghosh", "Ahmed El Fatmaoui", "Junying Zhao"]
+  area: health
+  status: rr
+  featured: false
+  summary: "This study examines whether the hepatitis B birth dose vaccine reduces neonatal mortality and what vaccine hesitancy costs in newborn lives."
+
+- id: ghosh2026maternalimmunization
+  title: "Maternal Immunization, State Medicaid Expansion, and National ACA Interplay for Infant Mortality: A US Pooled Cross-sectional Triple-difference Study"
+  authors: ["Pallab Ghosh", "Rashmi Jaggad", "Junying Zhao"]
+  area: health
+  status: rr
+  featured: false
+  summary: "This study asks how maternal immunization, state Medicaid expansion, and the national Affordable Care Act jointly affect infant mortality in the United States."
+
+- id: ghosh2026uqrendogeneity
+  title: "Unconditional Quantile Regressions Under Endogeneity"
+  authors: ["Pallab Ghosh"]
+  area: econometrics
+  status: rr
+  featured: false
+  summary: "This study extends unconditional quantile regression to settings in which an explanatory variable is endogenous."
+
+# ---------------------------------------------------------------------------
+# Under review
+# ---------------------------------------------------------------------------
+
+- id: ghosh2026echoes
+  title: "Echoes of Inequality: Gender Bias in Economics Coauthorship"
+  authors: ["Pallab Ghosh"]
+  area: labor
+  status: under_review
+  featured: false
+  summary: "This study examines how gender bias shapes coauthorship networks and publication outcomes in the economics profession."
+
+- id: ghosh2026shenhav
+  title: "The Relative Wage and Marriage after 2010: A Comment on Shenhav (2021)"
+  authors: ["Pallab Ghosh", "Mahla Shourian"]
+  area: labor
+  status: under_review
+  featured: false
+  note: "Mahla Shourian is the corresponding author."
+  summary: "This study revisits the relationship between the relative wage of women and marriage rates in the United States after 2010, extending the analysis of Shenhav (2021)."
+
+- id: ghosh2026computerization
+  title: "Does Computerization Affect Crime?"
+  authors: ["Pallab Ghosh", "Yao Yu", "Gary Hoover"]
+  area: labor
+  status: under_review
+  featured: false
+  summary: "This study examines whether the spread of computerization across local labor markets changes crime rates."
+
+- id: ghosh2026childrenwitness
+  title: "Children Who Witness: Early Life Exposure to Unilateral Divorce Laws and the Likelihood of being a Victim of Intimate Partner Violence"
+  authors: ["Pallab Ghosh", "Mahla Shourian"]
+  area: labor
+  status: under_review
+  featured: false
+  summary: "This study asks whether childhood exposure to unilateral divorce laws changes the likelihood of experiencing intimate partner violence in adulthood."
+
+- id: ghosh2026marriagemarket
+  title: "When the Marriage Market Fails: How Changes in Relative Wages Shape Childbearing Decisions"
+  authors: ["Pallab Ghosh", "Mahla Shourian"]
+  area: labor
+  status: under_review
+  featured: false
+  summary: "This study examines how changes in the relative wages of men and women affect marriage markets and childbearing decisions."
+
+- id: ghosh2026nepalearthquake
+  title: "Shaken to the Core: The Effect of Nepal's 2015 Earthquake on Infant Death"
+  authors: ["Pallab Ghosh", "Ramesh Dulal"]
+  area: labor
+  status: under_review
+  featured: false
+  summary: "This study examines the effect of the 2015 Nepal earthquake on infant mortality."
+
+# ---------------------------------------------------------------------------
+# Working paper
+# ---------------------------------------------------------------------------
+
+- id: ghosh2026substitutability
+  title: "A Study on Long-Run Substitutability Between Men and Women"
+  authors: ["Pallab Ghosh"]
+  area: labor
+  status: working
+  featured: false
+  summary: "This study estimates the long run degree of substitutability between male and female labor in production."
+
+# ---------------------------------------------------------------------------
+# Work in progress
+# ---------------------------------------------------------------------------
+
+- id: ghosh2026opioidteen
+  title: "A Slow Burn: The Opioid Epidemic and the Rise in Teen Fertility"
+  authors: ["Pallab Ghosh"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines whether the opioid epidemic contributed to changes in teen fertility in the United States."
+
+- id: ghosh2026oxycontinhomicide
+  title: "Prescription to Peril: OxyContin Penetration and Intimate Partner Homicide in the United States"
+  authors: ["Pallab Ghosh", "Mahla Shourian"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines the relationship between the market penetration of OxyContin and intimate partner homicide in the United States."
+
+- id: ghosh2026arabspring
+  title: "Revolution and Reproduction: How the Arab Spring Reshaped Marriage and Fertility in Egypt"
+  authors: ["Pallab Ghosh", "Yeganeh Karbalaei", "Firat Demir"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines how the Arab Spring protests affected marriage and fertility decisions in Egypt."
+
+- id: ghosh2026btcotton
+  title: "Bt Cotton Adoption and Socioeconomic Outcomes: Evidence from India"
+  authors: ["Pallab Ghosh", "Vivek Moorthy"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines the socioeconomic consequences of the adoption of genetically modified Bt cotton in India."
+
+- id: ghosh2026recentered
+  title: "Recentered Formula Instruments in Panel Data with Dynamic Treatment Exposure"
+  authors: ["Pallab Ghosh"]
+  area: econometrics
+  status: in_progress
+  featured: false
+  summary: "This study develops recentered formula instruments for panel data settings in which treatment exposure evolves over time."
+
+- id: ghosh2026marijuanavaccination
+  title: "Marijuana and Demand for Vaccination"
+  authors: ["Pallab Ghosh", "Myongjin Kim", "Ahmed El Fatmaoui"]
+  area: health
+  status: in_progress
+  featured: false
+  summary: "This study examines whether marijuana legalization and use affect the demand for vaccination."
+
+- id: ghosh2026maternalstress
+  title: "Does Maternal Stress During Pregnancy Affect Children's Mental Health in Adulthood?"
+  authors: ["Pallab Ghosh", "Myongjin Kim", "Mieon Seong"]
+  area: health
+  status: in_progress
+  featured: false
+  summary: "This study asks whether maternal stress during pregnancy has lasting effects on the mental health of children once they reach adulthood."
+
+- id: ghosh2026obesity
+  title: "Environmental Causes of the Obesity Epidemic"
+  authors: ["Pallab Ghosh", "Tyler Ransom"]
+  area: health
+  status: in_progress
+  featured: false
+  summary: "This study examines environmental contributors to the rise in obesity."
+
+- id: ghosh2026snapparadox
+  title: "The SNAP Paradox: Does Food Assistance Encourage Teen Childbearing?"
+  authors: ["Pallab Ghosh", "Waleed Wasti", "Judith Liu"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines whether access to SNAP food assistance affects teen childbearing."
+
+- id: ghosh2026nepalmigration
+  title: "Escaping Violence or Trapped by It? Long Run Effects of Civil Conflict on International Migration in Nepal"
+  authors: ["Pallab Ghosh", "Ramesh Dulal"]
+  area: labor
+  status: in_progress
+  featured: false
+  summary: "This study examines the long run effects of exposure to the Nepal civil war on international migration."

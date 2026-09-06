@@ -1,0 +1,13 @@
+---
+title: News
+slug: news
+subtitle: Publications, presentations, awards, and student placements.
+permalink: /news/
+---
+<p class="small muted"><a href="{{ '/news/feed.xml' | relative_url }}">Subscribe by RSS</a></p>
+<ul class="news-list news-archive">
+{% assign news = site.data.news | sort: "date" | reverse %}
+{% for n in news %}
+<li><time datetime="{{ n.date | date: '%Y-%m-%d' }}">{{ n.date | date: "%B %-d, %Y" }}</time><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+{% endfor %}
+</ul>

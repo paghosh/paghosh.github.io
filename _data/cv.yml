@@ -1,0 +1,99 @@
+# CV sections other than publications, teaching, and students.
+education:
+  - degree: Ph.D. in Economics
+    school: Syracuse University
+    detail: "Specialization: Labor Economics and Econometrics"
+    when: 2009 to 2014
+  - degree: M.S. in Quantitative Economics
+    school: Indian Statistical Institute, Kolkata
+    detail: "Specialization: Econometrics"
+    when: 2005 to 2007
+  - degree: B.S. in Economics
+    school: University of Calcutta
+    when: 2002 to 2005
+
+employment:
+  - title: Associate Professor of Economics
+    org: University of Oklahoma
+    when: July 2020 to present
+  - title: Director, Online MA in Econometrics
+    org: University of Oklahoma
+    when: July 2023 to present
+  - title: Director of Graduate Studies, Department of Economics
+    org: University of Oklahoma
+    when: July 2020 to June 2023
+  - title: Assistant Professor of Economics
+    org: University of Oklahoma
+    when: August 2014 to June 2020
+  - title: Instructor, Teaching and Research Assistant
+    org: Syracuse University
+    when: 2009 to 2014
+  - title: Market Research Analyst, Return on Sales and Investment
+    org: Hewlett-Packard, Bangalore, India
+    when: July 2007 to June 2009
+
+awards:
+  - { year: 2026, text: "Merrick Foundation Teaching Award, University of Oklahoma" }
+  - { year: 2017, text: "Diversity in Tenure and Economics (DITE) Program" }
+  - { year: 2015, text: "Junior Faculty Summer Fellowship, Department of Economics, University of Oklahoma" }
+  - { year: 2014, text: "Outstanding Doctoral Dissertation Award, Maxwell School, Syracuse University" }
+  - { year: 2013, text: "Certificate in University Teaching, Syracuse University" }
+  - { year: 2010, text: "Maxwell Dean Summer Fellowship, Syracuse University (also 2012 and 2013)" }
+  - { year: 2008, text: "Albert Einstein Award for Innovation, Hewlett-Packard" }
+  - { year: 2007, text: "Analyst Accolade Award, Hewlett-Packard" }
+
+funding:
+  - text: "New Investigator Seed Grant, Presbyterian Health Foundation, $50,000, July 2022 to May 2023 (team member; principal investigator Junying Zhao)"
+  - text: "Sabbatical leave, University of Oklahoma, Fall 2023"
+
+talks:
+  - { year: 2026, venues: "American Economic Association Annual Meetings; Southern Economic Association Annual Meetings (forthcoming)" }
+  - { year: 2025, venues: "American Economic Association Annual Meetings; Southern Economic Association Annual Meetings; University of New Mexico" }
+  - { year: 2024, venues: "Southern Economic Association Annual Meetings" }
+  - { year: 2023, venues: "Society of Labor Economists Annual Meetings; AEA Summer Program at Howard University; Southern Economic Association Annual Meetings" }
+  - { year: 2022, venues: "American Economic Association Annual Meetings" }
+  - { year: 2021, venues: "Syracuse University; Rowan University" }
+  - { year: 2020, venues: "Western Economic Association Annual Meetings" }
+  - { year: 2019, venues: "American Economic Association Annual Meetings; Midwest Economic Association Annual Meetings" }
+  - { year: 2018, venues: "American Economic Association Annual Meetings; Oklahoma State University; IZA Conference on Gender and Family Economics; Southern Economic Association Annual Meetings" }
+  - { year: 2017, venues: "American Economic Association Annual Meetings; Society of Labor Economists" }
+  - { year: 2016, venues: "Royal Economic Society (Brighton, UK); Canadian Economic Association (Ottawa, Canada)" }
+  - { year: 2015, venues: "Society of Labor Economists and European Association of Labour Economists Joint Meetings (Montreal, Canada)" }
+  - { year: 2014, venues: "Syracuse University; University of Oklahoma" }
+  - { year: 2013, venues: "North American Econometric Society; European Association of Labour Economists (Turin, Italy); Eastern Economic Association" }
+  - { year: 2012, venues: "European Association of Labour Economists (Bonn, Germany); Eastern Economic Association" }
+
+refereeing:
+  summary: "54 referee reports for 21 journals, plus two proposal reviews for the National Science Foundation. Discussant at three American Economic Association sessions and chair of two Southern Economic Association sessions."
+  journals:
+    - { name: Journal of Labor Research, n: 12 }
+    - { name: Empirical Economics, n: 8 }
+    - { name: Labour Economics, n: 5 }
+    - { name: "Journal of Economics, Race, and Policy", n: 3 }
+    - { name: Southern Economic Journal, n: 3 }
+    - { name: World Development, n: 3 }
+    - { name: Applied Economics, n: 2 }
+    - { name: Economic Modelling, n: 2 }
+    - { name: Journal of Econometrics, n: 2 }
+    - { name: Journal of Population Economics, n: 2 }
+    - { name: Papers in Regional Science, n: 2 }
+    - { name: Applied Economics Letters, n: 1 }
+    - { name: BMJ Public Health, n: 1 }
+    - { name: Economic Inquiry, n: 1 }
+    - { name: Economics Letters, n: 1 }
+    - { name: Journal of Applied Econometrics, n: 1 }
+    - { name: Journal of Economic Behavior and Organization, n: 1 }
+    - { name: Journal of Policy Analysis and Management, n: 1 }
+    - { name: Review of Black Political Economy, n: 1 }
+    - { name: Review of Economic Dynamics, n: 1 }
+    - { name: The B.E. Journal of Economic Analysis and Policy, n: 1 }
+
+service:
+  - { text: "Director, Online MA in Econometrics", when: "2023 to present" }
+  - { text: "Director of Graduate Studies, Department of Economics", when: "2020 to 2023", detail: "Built the department's first cohort level assessment of the doctoral program (2006 to 2021) and a stipend benchmark against twelve peer programs; the assistantship stipend rose from $14,203 to $18,500." }
+  - { text: "PhD Admissions Committee (Chair, 2020 to 2023)", when: "2018 to present" }
+  - { text: "Chair, Assistant Professor of Economics Search Committee", when: "2024 to 2025" }
+  - { text: "Chong Liew Endowed Chair Search Committee", when: "2025 to 2026" }
+  - { text: "Chong Liew Summer Research Committee", when: "2020 to 2025" }
+  - { text: "Award Selection Committee", when: "2026" }
+  - { text: "Finalist, Associate Dean of the Graduate College, University of Oklahoma", when: "2024" }

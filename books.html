@@ -1,0 +1,21 @@
+---
+title: Books
+slug: books
+subtitle: What I am reading, what I return to, and what is on the list. Migrated from the reading lists on my old site and updated as I go.
+permalink: /books/
+---
+{% assign cats = site.data.books %}
+{% assign total = 0 %}{% for c in cats %}{% assign total = total | plus: c.books.size %}{% endfor %}
+<div class="book-cats" role="group" aria-label="Choose a category">
+  <button class="chip" type="button" data-cat="all" aria-pressed="true">All ({{ total }})</button>
+  {% for c in cats %}<button class="chip" type="button" data-cat="{{ c.key }}" aria-pressed="false">{{ c.name }} ({{ c.books | size }})</button>{% endfor %}
+</div>
+
+{% for c in cats %}
+<section class="book-cat" id="cat-{{ c.key }}">
+  <h2>{{ c.name }}</h2>
+  <ul class="book-list">
+    {% for b in c.books %}<li>{{ b.title }}{% if b.by %} <span class="by">by {{ b.by }}</span>{% endif %}</li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}

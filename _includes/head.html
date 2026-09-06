@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#7a1f1f">
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+{% seo title=false %}
+<title>{% if page.title and page.url != "/" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}, {{ site.tagline }}{% endif %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ '/assets/img/headshot_small.jpg' | relative_url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} news" href="{{ '/news/feed.xml' | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "alternateName": "{{ site.author.full_name }}",
+  "jobTitle": "{{ site.author.title }}",
+  "email": "mailto:{{ site.author.email }}",
+  "telephone": "{{ site.author.phone }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.author.photo | absolute_url }}",
+  "worksFor": { "@type": "CollegeOrUniversity", "name": "{{ site.author.university }}", "url": "https://www.ou.edu" },
+  "affiliation": { "@type": "Organization", "name": "{{ site.author.department }}, {{ site.author.university }}", "url": "{{ site.links.department }}" },
+  "address": { "@type": "PostalAddress", "streetAddress": "{{ site.author.address_line1 }}", "addressLocality": "Norman", "addressRegion": "OK", "postalCode": "73072", "addressCountry": "US" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Syracuse University" },
+    { "@type": "CollegeOrUniversity", "name": "Indian Statistical Institute" },
+    { "@type": "CollegeOrUniversity", "name": "University of Calcutta" }
+  ],
+  "knowsAbout": ["Econometrics", "Labor Economics", "Health Economics", "Development Economics", "Quantile Regression"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user={{ site.profiles.scholar }}",
+    "https://orcid.org/{{ site.profiles.orcid }}",
+    "https://www.linkedin.com/in/{{ site.profiles.linkedin }}/",
+    "https://github.com/{{ site.profiles.github }}",
+    "https://www.researchgate.net/profile/{{ site.profiles.researchgate }}"
+  ]
+}
+</script>

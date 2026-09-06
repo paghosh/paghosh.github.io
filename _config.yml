@@ -1,0 +1,98 @@
+title: Pallab Ghosh
+tagline: Associate Professor of Economics, University of Oklahoma
+description: >-
+  Pallab Ghosh is an Associate Professor of Economics at the University of Oklahoma
+  and Director of the Online MA in Econometrics. Research in econometrics, labor
+  economics, health economics, and development economics.
+url: "https://paghosh.github.io"
+baseurl: ""
+lang: en
+timezone: America/Chicago
+
+author:
+  name: Pallab Ghosh
+  full_name: Pallab Kumar Ghosh
+  title: Associate Professor of Economics
+  role2: Director, Online MA in Econometrics
+  department: Department of Economics
+  university: University of Oklahoma
+  email: pallab.ghosh@ou.edu
+  phone: "405 325 2643"
+  office: "Room 158, Cate Center 1 (CCD1)"
+  address_line1: 308 Cate Center Drive
+  address_line2: Norman, OK 73072, USA
+  map_url: https://maps.google.com/?q=308+Cate+Center+Drive,+Norman,+OK+73072
+  photo: /assets/img/headshot.jpg
+  cv_pdf: /assets/cv/CV_Pallab_Ghosh.pdf
+  cv_pdf_date: May 26, 2026
+
+profiles:
+  scholar: QWA-vfoAAAAJ
+  orcid: 0000-0003-3873-4774
+  linkedin: pallab-ghosh-2a977813
+  github: paghosh
+  researchgate: Pallab-Ghosh
+
+# Google Scholar metrics. Update these numbers by hand when they change.
+metrics:
+  citations: 199
+  h_index: 8
+  i10_index: 7
+  as_of: September 2026
+
+# Names and links that appear in several places
+links:
+  department: https://www.ou.edu/cas/economics
+  ma_program: https://online.ou.edu/program/ma-in-econometrics
+  ma_catalog: https://ou-public.courseleaf.com/dodge-arts-sciences/economics/econometrics-master-arts/
+  aea_video: https://www.aeaweb.org/conference/videos/2019/pallab-ghosh
+  scholar: https://scholar.google.com/citations?user=QWA-vfoAAAAJ
+
+# Navigation (order matters)
+nav:
+  - { title: Research, url: /research/ }
+  - { title: CV, url: /cv/ }
+  - { title: Teaching, url: /teaching/ }
+  - { title: Students, url: /students/ }
+  - { title: News, url: /news/ }
+  - { title: Books, url: /books/ }
+  - { title: Contact, url: /contact/ }
+
+# jekyll-seo-tag
+twitter:
+  card: summary
+logo: /assets/img/headshot.jpg
+social:
+  name: Pallab Ghosh
+  links:
+    - https://scholar.google.com/citations?user=QWA-vfoAAAAJ
+    - https://orcid.org/0000-0003-3873-4774
+    - https://www.linkedin.com/in/pallab-ghosh-2a977813/
+    - https://github.com/paghosh
+    - https://www.researchgate.net/profile/Pallab-Ghosh
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules
+  - vendor
+  - .github
+  - scripts
+  - "*.sh"
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }

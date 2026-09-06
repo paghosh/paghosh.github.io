@@ -1,0 +1,593 @@
+# Reading lists, migrated from the 2014 Google Site. Each category has a name, a key (url safe), and a list of books.
+- name: Currently Reading
+  key: currently-reading
+  books:
+  - title: 'Glucose Revolution: The Life-Changing Power of Balancing Your Blood Sugar'
+    by: Jessie Inchauspe
+  - title: 'The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers'
+    by: Ben Horowitz
+  - title: 'The Bezos Letters: 14 Principles to Grow Your Business like Amazon'
+    by: Steve Anderson and Karen Anderson
+- name: All-time Favorites
+  key: all-time-favorites
+  books:
+  - title: 'The 38 Letters from J.D. Rockefeller to His Son: Perspectives, Ideology, and Wisdom'
+  - title: 'Fiber Fueled: The Plant-Based Gut Health Program for Losing Weight, Restoring Your Health, and Optimizing Your Microbiome'
+    by: Will Bulsiewicz
+  - title: Man's Search for Meaning
+    by: Viktor Frankl
+  - title: 'Lifespan: Why We Age and Why We Don''t Have To'
+    by: David Sinclair
+  - title: 'Poor Charlie''s Almanack: The Essential Wit and Wisdom of Charles T. Munger'
+    by: Charles T. Munger
+  - title: 'The Rational Optimist: How Prosperity Evolves'
+    by: Matt Ridley
+  - title: Leadership
+    by: Doris Kearns Goodwin
+  - title: 'The Almanack of Naval Ravikant: A Guide to Wealth and Happiness'
+    by: Eric Jorgenson
+  - title: The Autobiography of Martin Luther King, Jr.
+    by: Martin Luther King, Jr.
+  - title: Deng Xiaoping and the Transformation of China
+    by: Ezra F. Vogel
+  - title: 'Churchill: Walking with Destiny'
+    by: Andrew Roberts
+  - title: 'Team of Rivals: The Political Genius of Abraham Lincoln'
+    by: Doris Kearns Goodwin
+  - title: 'Why Nations Fail: The Origins of Power, Prosperity, and Poverty'
+    by: Daron Acemoglu and James A. Robinson
+  - title: Siddhartha
+    by: Hermann Hesse
+  - title: 'Sapiens: A Brief History of Humankind'
+    by: Yuval Noah Harari
+  - title: 'A. Lincoln: A Biography'
+    by: Ronald C. White
+  - title: Meditations
+    by: Marcus Aurelius
+  - title: Thinking, Fast and Slow
+    by: Daniel Kahneman
+  - title: 'Titan: The Life of John D. Rockefeller, Sr.'
+    by: Ron Chernow
+  - title: 'Mindset: The New Psychology of Success'
+    by: Carol S. Dweck
+- name: Economics
+  key: economics
+  books:
+  - title: 'Naked Economics: Undressing the Dismal Science'
+    by: Charles Wheelan
+  - title: Good Economics for Hard Times
+    by: Abhijit Banerjee and Esther Duflo
+  - title: 'This Time Is Different: Eight Centuries of Financial Folly'
+    by: Carmen Reinhart and Kenneth Rogoff
+  - title: How Countries Go Broke
+    by: Ray Dalio
+  - title: 'Growth: From Microorganisms to Megacities'
+    by: Vaclav Smil
+  - title: 'Power and Prediction: The Disruptive Economics of Artificial Intelligence'
+    by: Ajay Agrawal, Joshua Gans, and Avi Goldfarb
+  - title: 'Principles: Life and Work'
+    by: Ray Dalio
+  - title: Principles for Dealing with the Changing World Order
+    by: Ray Dalio
+  - title: Co-Intelligence
+    by: Ethan Mollick
+  - title: 'The Coming Wave: AI, Power, and Our Future'
+    by: Mustafa Suleyman
+  - title: After the Spike
+    by: Dean Spears and Michael Geruso
+- name: Biography
+  key: biography
+  books:
+  - title: Steve Jobs
+    by: Walter Isaacson
+  - title: Elon Musk
+    by: Walter Isaacson
+  - title: 'Einstein: His Life and Universe'
+    by: Walter Isaacson
+  - title: Leonardo da Vinci
+    by: Walter Isaacson
+  - title: 'Long Walk to Freedom: The Autobiography of Nelson Mandela'
+    by: Nelson Mandela
+  - title: 'Source Code: My Beginnings'
+    by: Bill Gates
+  - title: 'Shoe Dog: A Memoir'
+    by: Phil Knight
+  - title: 'Benjamin Franklin: An American Life'
+    by: Walter Isaacson
+  - title: 'Washington: A Life'
+    by: Ron Chernow
+  - title: Grant
+    by: Ron Chernow
+  - title: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future'
+    by: Ashlee Vance
+  - title: Edison
+    by: Edmund Morris
+  - title: Will
+    by: Will Smith
+  - title: A Promised Land
+    by: Barack Obama
+  - title: 'Educated: A Memoir'
+    by: Tara Westover
+  - title: 'My Inventions: The Autobiography of Nikola Tesla'
+    by: Nikola Tesla
+  - title: 'Buffett: The Making of an American Capitalist'
+    by: Roger Lowenstein
+  - title: The Autobiography of Andrew Carnegie and The Gospel of Wealth
+    by: Andrew Carnegie
+  - title: 'Michael Jordan: The Life'
+    by: Roland Lazenby
+  - title: 'Finding Me: A Memoir'
+    by: Viola Davis
+  - title: 'An Autobiography: The Story of My Experiments with Truth'
+    by: Mahatma Gandhi
+  - title: 'Bob Dylan: A Spiritual Life'
+    by: Scott M. Marshall
+  - title: 'My Life in Full: Work, Family, and Our Future'
+    by: Indra Nooyi
+- name: Self-Help
+  key: self-help
+  books:
+  - title: 'Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones'
+    by: James Clear
+  - title: 'Deep Work: Rules for Focused Success in a Distracted World'
+    by: Cal Newport
+  - title: 'Digital Minimalism: Choosing a Focused Life in a Noisy World'
+    by: Cal Newport
+  - title: 'So Good They Can''t Ignore You: Why Skills Trump Passion in the Quest for Work You Love'
+    by: Cal Newport
+  - title: The 7 Habits of Highly Effective People
+    by: Stephen R. Covey
+  - title: 'The Power of Now: A Guide to Spiritual Enlightenment'
+    by: Eckhart Tolle
+  - title: The Subtle Art of Not Giving a F*ck
+    by: Mark Manson
+  - title: 'Slow Productivity: The Lost Art of Accomplishment Without Burnout'
+    by: Cal Newport
+  - title: The Let Them Theory
+    by: Mel Robbins
+  - title: Think and Grow Rich
+    by: Napoleon Hill
+  - title: Stillness Is the Key
+    by: Ryan Holiday
+  - title: 'Ultralearning: Master Hard Skills, Outsmart the Competition, and Accelerate Your Career'
+    by: Scott H. Young
+  - title: The Power of Your Subconscious Mind
+    by: Joseph Murphy
+  - title: 'Inner Engineering: A Yogi''s Guide to Joy'
+    by: Sadhguru
+  - title: 'The Mind Illuminated: A Complete Meditation Guide'
+    by: Culadasa
+  - title: 'Manifest: 7 Steps to Living Your Best Life'
+    by: Roxie Nafousi
+  - title: 'Fully Present: The Science, Art, and Practice of Mindfulness'
+    by: Susan L. Smalley and Diana Winston
+  - title: 'A Mind for Numbers: How to Excel at Math and Science'
+    by: Barbara Oakley
+  - title: 'Cognitive Behavioral Therapy: Techniques for Retraining Your Brain'
+  - title: 'Teachings of the Buddha: Revised and Expanded'
+    by: Jack Kornfield (editor)
+  - title: 'The Compound Effect: Multiply Your Success One Simple Step at a Time'
+    by: Darren Hardy
+  - title: 'The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results'
+    by: Gary Keller and Jay Papasan
+  - title: 'High Performance Habits: How Extraordinary People Become That Way'
+    by: Brendon Burchard
+  - title: 'The Book of Joy: Lasting Happiness in a Changing World'
+    by: Dalai Lama and Desmond Tutu
+  - title: 'Think Like a Monk: Train Your Mind for Peace and Purpose Every Day'
+    by: Jay Shetty
+  - title: 'A Guide to the Good Life: The Ancient Art of Stoic Joy'
+    by: William B. Irvine
+- name: Business and Investment
+  key: business-and-investment
+  books:
+  - title: The Intelligent Investor
+    by: Benjamin Graham
+  - title: 'The Snowball: Warren Buffett and the Business of Life'
+    by: Alice Schroeder
+  - title: 'The Most Important Thing: Uncommon Sense for the Thoughtful Investor'
+    by: Howard Marks
+  - title: 'Charlie Munger: The Complete Investor'
+    by: Tren Griffin
+  - title: 'Zero to One: Notes on Startups, or How to Build the Future'
+    by: Peter Thiel
+  - title: The Lean Startup
+    by: Eric Ries
+  - title: 'Good to Great: Why Some Companies Make the Leap'
+    by: Jim Collins
+  - title: The Innovator's Dilemma
+    by: Clayton M. Christensen
+  - title: 'Invent and Wander: The Collected Writings of Jeff Bezos'
+    by: Jeff Bezos
+  - title: 'What It Takes: Lessons in the Pursuit of Excellence'
+    by: Stephen A. Schwarzman
+  - title: 'Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity'
+    by: Kim Scott
+  - title: 'Rich Dad''s Cashflow Quadrant: Guide to Financial Freedom'
+    by: Robert Kiyosaki
+  - title: 'Mastering the Market Cycle: Getting the Odds on Your Side'
+    by: Howard Marks
+  - title: 'The Essays of Warren Buffett: Lessons for Corporate America'
+    by: Lawrence Cunningham
+  - title: The Warren Buffett Way
+    by: Robert Hagstrom
+  - title: A Random Walk Down Wall Street
+    by: Burton Malkiel
+  - title: Stocks for the Long Run
+    by: Jeremy Siegel
+  - title: The Four Pillars of Investing
+    by: William Bernstein
+  - title: 'The Dhandho Investor: The Low-Risk Value Method to High Returns'
+    by: Mohnish Pabrai
+  - title: 'The Ride of a Lifetime: Lessons Learned from 15 Years as CEO of the Walt Disney Company'
+    by: Robert Iger
+  - title: 'No Rules Rules: Netflix and the Culture of Reinvention'
+    by: Reed Hastings and Erin Meyer
+  - title: 'The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution'
+    by: Gregory Zuckerman
+  - title: 'Same as Ever: A Guide to What Never Changes'
+    by: Morgan Housel
+- name: Health
+  key: health
+  books:
+  - title: 'Why We Get Sick: The Hidden Epidemic at the Root of Most Chronic Disease'
+    by: Benjamin Bikman
+  - title: How Not to Die
+    by: Michael Greger
+  - title: 'How Not to Age: The Scientific Approach to Getting Healthier as You Get Older'
+    by: Michael Greger
+  - title: 'Outlive: The Science and Art of Longevity'
+    by: Peter Attia
+  - title: 'Why We Sleep: Unlocking the Power of Sleep and Dreams'
+    by: Matthew Walker
+  - title: 'Dopamine Nation: Finding Balance in the Age of Indulgence'
+    by: Anna Lembke
+  - title: 'The Obesity Code: Unlocking the Secrets of Weight Loss'
+    by: Jason Fung
+  - title: 'The Anti-Viral Gut: Tackling Pathogens from the Inside Out'
+    by: Robynne Chutkan
+  - title: 'Healing Psoriasis: The Natural Alternative'
+    by: John Pagano
+  - title: 'The Glaucoma Guidebook: Expert Advice on Maintaining Healthy Vision'
+    by: Constance Okeke
+  - title: 'Fast. Feast. Repeat.: The Comprehensive Guide to Delay, Don''t Deny Intermittent Fasting'
+    by: Gin Stephens
+  - title: 'Life in the Fasting Lane: How to Make Intermittent Fasting a Lifestyle'
+    by: Jason Fung, Eve Mayer, and Megan Ramos
+  - title: 'The Thyroid Reset Diet: Reverse Hypothyroidism and Hashimoto''s Symptoms'
+    by: Alan Christianson
+  - title: 'Heal Your Gut, Mind and Emotions: 5 Steps to Reset Your Health with Ayurveda'
+    by: Dimple Jangda
+  - title: 'The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness'
+    by: Jonathan Haidt
+  - title: 'The Good Life: Lessons from the World''s Longest Scientific Study of Happiness'
+    by: Robert Waldinger and Marc Schulz
+- name: Psychology
+  key: psychology
+  books:
+  - title: The Courage to Be Disliked
+    by: Ichiro Kishimi and Fumitake Koga
+  - title: 'Flow: The Psychology of Optimal Experience'
+    by: Mihaly Csikszentmihalyi
+  - title: 'Atlas of the Heart: Mapping Meaningful Connection'
+    by: Brene Brown
+  - title: Emotional Intelligence 2.0
+    by: Travis Bradberry and Jean Greaves
+  - title: 'Think Again: The Power of Knowing What You Don''t Know'
+    by: Adam Grant
+  - title: 'Range: Why Generalists Triumph in a Specialized World'
+    by: David Epstein
+  - title: 'Nudge: Improving Decisions About Health, Wealth, and Happiness'
+    by: Richard Thaler and Cass Sunstein
+  - title: 'A Thousand Brains: A New Theory of Intelligence'
+    by: Jeff Hawkins
+  - title: 'Beyond Order: 12 More Rules for Life'
+    by: Jordan Peterson
+  - title: 'Thinking in Bets: Making Smarter Decisions When You Don''t Have All the Facts'
+    by: Annie Duke
+  - title: 'David and Goliath: Underdogs, Misfits, and the Art of Battling Giants'
+    by: Malcolm Gladwell
+  - title: 'The Inner Game of Tennis: The Classic Guide to the Mental Side of Peak Performance'
+    by: W. Timothy Gallwey
+  - title: 'Decisive: How to Make Better Choices in Life and Work'
+    by: Chip Heath and Dan Heath
+  - title: 'Clear Thinking: Turning Ordinary Moments into Extraordinary Results'
+    by: Shane Parrish
+  - title: 'The Great Mental Models: General Thinking Concepts'
+    by: Shane Parrish
+  - title: 'Good Habits, Bad Habits: The Science of Making Positive Changes That Stick'
+    by: Wendy Wood
+- name: History
+  key: history
+  books:
+  - title: 'The Rise and Fall of the Third Reich: A History of Nazi Germany'
+    by: William L. Shirer
+  - title: The Rise and Fall of the British Empire
+    by: Lawrence James
+  - title: '1776'
+    by: David McCullough
+  - title: 'Guns, Germs and Steel: The Fate of Human Societies'
+    by: Jared Diamond
+  - title: 'Homo Deus: A Brief History of Tomorrow'
+    by: Yuval Noah Harari
+  - title: 'Nexus: A Brief History of Information Networks from the Stone Age to AI'
+    by: Yuval Noah Harari
+  - title: 'The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution'
+    by: Walter Isaacson
+  - title: 'The Story of Britain: From the Romans to the Present'
+    by: Rebecca Fraser
+  - title: 'The Spy and the Traitor: The Greatest Espionage Story of the Cold War'
+    by: Ben Macintyre
+  - title: 'The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race'
+    by: Walter Isaacson
+- name: Mindfulness
+  key: mindfulness
+  books:
+  - title: Realizing the Power of Now
+    by: Eckhart Tolle
+  - title: Practicing the Power of Now
+    by: Eckhart Tolle
+  - title: Zen Mind, Beginner's Mind
+    by: Shunryu Suzuki
+  - title: Buddhism Without Beliefs
+    by: Stephen Batchelor
+  - title: Journey of Souls
+    by: Michael Newton
+  - title: Destiny of Souls
+    by: Michael Newton
+  - title: The Source Field Investigations
+    by: David Wilcock
+  - title: Reality Unveiled
+    by: Ziad Masri
+  - title: Mind to Matter
+    by: Dawson Church
+  - title: The Yoga Sutras of Patanjali
+    by: Patanjali
+  - title: Midnights with the Mystic
+    by: Sadhguru
+  - title: The Code of the Extraordinary Mind
+    by: Vishen Lakhiani
+  - title: The Bhagavad Gita
+  - title: Raja Yoga
+    by: Swami Vivekananda
+  - title: Lean Thinking
+    by: James Womack and Daniel Jones
+  - title: Wheels of Life
+    by: Anodea Judith
+  - title: How Bad Do You Want It?
+    by: Matt Fitzgerald
+  - title: The Champion's Mind
+    by: Jim Afremow
+  - title: The Art of Happiness
+    by: Dalai Lama and Howard Cutler
+  - title: Revolution
+    by: Walter Isaacson
+- name: Wishlist
+  key: wishlist
+  books:
+  - title: Working Backwards
+    by: Colin Bryar and Bill Carr
+  - title: The Book of Elon
+  - title: The Art of Persuasion
+    by: Bob Burg
+  - title: Vastu Remedies
+  - title: The Catalyst
+    by: Jonah Berger
+  - title: 'Definiteness of Purpose: The Foundation of Success'
+    by: Napoleon Hill
+  - title: The Beginning of Infinity
+    by: David Deutsch
+  - title: A Mind for Sales
+    by: Mark Hunter
+  - title: 'The Universal Laws of Awakening: A Spiritual Classic'
+  - title: 12 Laws of Karma
+  - title: Abundance
+    by: Peter Diamandis and Steven Kotler
+  - title: Build a Large Language Model (From Scratch)
+    by: Sebastian Raschka
+  - title: Unconventional Success
+    by: David Swensen
+  - title: The Spontaneous Fulfillment of Desire
+    by: Deepak Chopra
+  - title: The Source
+    by: Tara Swart
+  - title: The No-Cry Sleep Solution
+    by: Elizabeth Pantley
+  - title: The Upanishads
+  - title: Serpent Rising
+    by: Mary Mueller Shutan
+  - title: Meditations for Breaking the Habit of Being Yourself
+    by: Joe Dispenza
+  - title: A Man for All Markets
+    by: Edward O. Thorp
+  - title: Dream Big
+    by: Cristiane Correa
+  - title: Peak Performance
+    by: Brad Stulberg and Steve Magness
+  - title: Don't Believe Everything You Think
+    by: Joseph Nguyen
+  - title: The Power of Self-Discipline
+    by: Peter Hollins
+  - title: The Communication Book
+    by: Mikael Krogerus and Roman Tschappeler
+  - title: The War of Art
+    by: Steven Pressfield
+  - title: Poor Richard's Almanack
+    by: Benjamin Franklin
+  - title: Predictably Irrational
+    by: Dan Ariely
+  - title: Letters from a Stoic
+    by: Seneca
+  - title: How to Decide
+    by: Annie Duke
+  - title: Stress Test
+    by: Timothy Geithner
+  - title: The End of Alchemy
+    by: Mervyn King
+  - title: The 9 Steps to Financial Freedom
+    by: Suze Orman
+  - title: Supercommunicators
+    by: Charles Duhigg
+  - title: The Little Book of Valuation
+    by: Aswath Damodaran
+  - title: Fooled by Randomness
+    by: Nassim Nicholas Taleb
+  - title: Lateral Thinking
+    by: Edward de Bono
+  - title: The Paradox of Choice
+    by: Barry Schwartz
+  - title: Creativity
+    by: Mihaly Csikszentmihalyi
+  - title: Influence, New and Expanded
+    by: Robert Cialdini
+  - title: A Brief History of Intelligence
+    by: Max Bennett
+  - title: From Strength to Strength
+    by: Arthur C. Brooks
+  - title: Relentless Spirit
+    by: Missy Franklin
+  - title: The Longevity Solution
+    by: James DiNicolantonio and Jason Fung
+  - title: The Little Book of Value Investing
+    by: Christopher Browne
+  - title: Raising Mentally Strong Kids
+    by: Daniel Amen and Charles Fay
+  - title: Raising Good Humans
+    by: Hunter Clarke-Fields
+  - title: Hidden Potential
+    by: Adam Grant
+  - title: Learned Optimism
+    by: Martin Seligman
+  - title: Misbehaving
+    by: Richard Thaler
+  - title: Manual for Living
+    by: Epictetus
+  - title: The Economics of Inequality
+    by: Thomas Piketty
+  - title: The Selfish Gene
+    by: Richard Dawkins
+  - title: Hitler
+    by: Ian Kershaw
+  - title: Buddha
+    by: Karen Armstrong
+  - title: Napoleon
+    by: Andrew Roberts
+  - title: 'The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph'
+    by: Ryan Holiday
+  - title: Power and Progress
+    by: Daron Acemoglu and Simon Johnson
+  - title: The Nature of Technology
+    by: W. Brian Arthur
+  - title: 21 Lessons for the 21st Century
+    by: Yuval Noah Harari
+  - title: China and Japan
+    by: Ezra F. Vogel
+  - title: The Splendid and the Vile
+    by: Erik Larson
+  - title: What Money Can't Buy
+    by: Michael Sandel
+  - title: Deep Thinking
+    by: Garry Kasparov
+  - title: Collapse
+    by: Jared Diamond
+  - title: Power vs. Force
+    by: David R. Hawkins
+  - title: The Rise and Fall of Nations
+    by: Ruchir Sharma
+  - title: A World Without Email
+    by: Cal Newport
+  - title: What Happened to You?
+    by: Bruce D. Perry and Oprah Winfrey
+  - title: The Body Keeps the Score
+    by: Bessel van der Kolk
+  - title: Never Split the Difference
+    by: Chris Voss
+  - title: The Four Agreements
+    by: Don Miguel Ruiz
+  - title: 'Alibaba: The House That Jack Ma Built'
+    by: Duncan Clark
+  - title: 'Ikigai: The Japanese Secret to a Long and Happy Life'
+    by: Hector Garcia and Francesc Miralles
+  - title: The Presentation Secrets of Steve Jobs
+    by: Carmine Gallo
+  - title: To Sell Is Human
+    by: Daniel H. Pink
+  - title: The Art of Saying No
+    by: Damon Zahariades
+  - title: The Daily Stoic
+    by: Ryan Holiday
+  - title: The Rise of Theodore Roosevelt
+    by: Edmund Morris
+  - title: These Truths
+    by: Jill Lepore
+  - title: Caste
+    by: Isabel Wilkerson
+  - title: The Effective Executive
+    by: Peter Drucker
+  - title: Built to Last
+    by: Jim Collins
+  - title: The Quants
+    by: Scott Patterson
+  - title: Dark Pools
+    by: Scott Patterson
+  - title: The Black Swan
+    by: Nassim Nicholas Taleb
+  - title: The Laws of Human Nature
+    by: Robert Greene
+  - title: The Whole-Brain Child
+    by: Daniel Siegel and Tina Payne Bryson
+  - title: The Highly Sensitive Person
+    by: Elaine Aron
+  - title: That Will Never Work
+    by: Marc Randolph
+  - title: Hit Refresh
+    by: Satya Nadella
+  - title: Your Second Life Begins When You Realize You Only Have One
+    by: Raphaelle Giordano
+  - title: Anti Inflammatory Diet for Beginners
+  - title: The Thyroid Diet Plan
+  - title: Where Good Ideas Come From
+    by: Steven Johnson
+  - title: The Start-Up of You
+    by: Reid Hoffman and Ben Casnocha
+  - title: Outliers
+    by: Malcolm Gladwell
+  - title: Peak
+    by: Anders Ericsson and Robert Pool
+  - title: The Future of Capitalism
+    by: Paul Collier
+  - title: The Deficit Myth
+    by: Stephanie Kelton
+  - title: Talking to Strangers
+    by: Malcolm Gladwell
+  - title: Measure What Matters
+    by: John Doerr
+  - title: Creative Visualization
+    by: Shakti Gawain
+  - title: 'Autobiography Collection: Henry Ford, Nikola Tesla, and Benjamin Franklin'
+  - title: The Power of Positive Thinking
+    by: Norman Vincent Peale
+  - title: Why the Rich Are Getting Richer
+    by: Robert Kiyosaki
+  - title: Tax-Free Wealth
+    by: Tom Wheelwright
+  - title: The Little Book of Common Sense Investing
+    by: John C. Bogle
+  - title: Poor Economics
+    by: Abhijit Banerjee and Esther Duflo
+  - title: How to Win Friends and Influence People
+    by: Dale Carnegie
+  - title: Ego Is the Enemy
+    by: Ryan Holiday
+  - title: To Pixar and Beyond
+    by: Lawrence Levy
+  - title: How Google Works
+    by: Eric Schmidt and Jonathan Rosenberg
+  - title: The Everything Store
+    by: Brad Stone
+  - title: The Creative Habit
+    by: Twyla Tharp
+  - title: The Autobiography of Benjamin Franklin
+    by: Benjamin Franklin
+  - title: As a Man Thinketh
+    by: James Allen

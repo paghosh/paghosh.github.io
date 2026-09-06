@@ -1,0 +1,56 @@
+# Doctoral advisees, committees, and undergraduate honors students.
+advisees:
+  - name: Ramesh Dulal
+    field: Labor Economics
+    years: 2023 to 2027
+    role: Chair
+    placement: In progress
+  - name: Mahla Shourian
+    field: Labor Economics
+    years: 2022 to 2026
+    role: Chair
+    placement: On the 2026 academic job market
+  - name: Ahmed El Fatmaoui
+    field: Labor Economics
+    years: 2021 to 2025
+    role: Co-chair
+    placement: Assistant Professor of Economics, University of Wisconsin La Crosse
+  - name: Syed Waleed Wasti
+    field: Labor Economics
+    years: 2020 to 2024
+    role: Chair
+    placement: Assistant Professor, Salim Habib University
+
+committees:
+  - { name: Yeganeh Karbalaei, field: Health Economics, year: "2028 (expected)" }
+  - { name: Md Shafiul Islam, field: Development Economics, year: "2028 (expected)" }
+  - { name: Emilien Segla Bernus Akotenou, field: Development Economics, year: "2027 (expected)" }
+  - { name: Sushant Singh, field: International Trade, year: "2026 (expected)" }
+  - { name: Dayuan Xie, field: Labor Economics, year: "2024" }
+  - { name: Ahmed Chaudhuri, field: Political Economy, year: "2024" }
+  - { name: Salimeh Abedini Birang, field: Development Economics, year: "2024" }
+  - { name: Huiming Zhang, field: Finance, year: "2023" }
+  - { name: Sean Oconnor, field: Environmental Economics, year: "2021" }
+  - { name: Saini Das, field: Development Economics, year: "2021" }
+  - { name: Amir Tayebi, field: International Trade, year: "2021" }
+  - { name: Trupti Chaure, field: Development Economics, year: "2021" }
+  - { name: Xiao Liu, field: Public Finance, year: "2020" }
+  - { name: Amal Abeysekera, field: Finance, year: "2020" }
+  - { name: Gabriele Lattanzio, field: Finance, year: "2019" }
+  - { name: Constant Yayi, field: Development Economics, year: "2017" }
+  - { name: Yi Duan, field: International Trade, year: "2017" }
+  - { name: Zexuan Liu, field: Industrial Organization, year: "2016" }
+
+honors:
+  - { name: Michael O'Connor, year: 2026 }
+  - { name: Anna Hyslop, year: 2026 }
+  - { name: Henry Martin, year: 2026 }
+  - { name: Catherine Boyd, year: 2026 }
+  - { name: Braden Bortz, year: 2025 }
+  - { name: Jennifer Dunbar, year: 2024 }
+  - { name: Shubhashree Sathe, year: 2024 }
+  - { name: Kaleb Colibert, year: 2024 }
+  - { name: Brandy Herrera, year: 2021 }
+  - { name: Scott McLean, year: 2019 }
+  - { name: Claire Kvicala, year: 2018 }
+  - { name: Hameed Ahmed, year: 2016 }

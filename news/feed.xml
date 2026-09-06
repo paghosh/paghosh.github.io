@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /news/feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.title }} news</title>
+  <link>{{ '/news/' | absolute_url }}</link>
+  <atom:link href="{{ '/news/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
+  <description>Publications, presentations, awards, and student placements.</description>
+  <language>en</language>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+  {% assign news = site.data.news | sort: "date" | reverse %}
+  {% for n in news %}
+  <item>
+    <title>{{ n.text | markdownify | strip_html | truncate: 120 | xml_escape }}</title>
+    <description>{{ n.text | markdownify | xml_escape }}</description>
+    <pubDate>{{ n.date | date_to_rfc822 }}</pubDate>
+    <guid isPermaLink="false">news-{{ n.date | date: '%Y-%m-%d' }}-{{ forloop.index }}</guid>
+    <link>{{ '/news/' | absolute_url }}</link>
+  </item>
+  {% endfor %}
+</channel>
+</rss>

@@ -1,0 +1,27 @@
+---
+title: Contact
+slug: contact
+permalink: /contact/
+---
+<div class="contact-grid">
+  <div>
+    <h2>Office</h2>
+    <address>
+      <strong>{{ site.author.name }}</strong><br>
+      {{ site.author.department }}<br>
+      {{ site.author.university }}<br>
+      {{ site.author.address_line1 }}, {{ site.author.office }}<br>
+      {{ site.author.address_line2 }}
+    </address>
+    <p><a href="{{ site.author.map_url }}">Open in Google Maps</a></p>
+    <h2>Email and phone</h2>
+    <p><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>Office: {{ site.author.phone }}</p>
+    <p class="small muted">Email is the fastest way to reach me. Office hours change each semester and are posted in Canvas.</p>
+  </div>
+  <div>
+    <h2>Profiles</h2>
+    {% include profile-icons.html %}
+    <h2>Curriculum vitae</h2>
+    <p><a class="btn" href="{{ site.author.cv_pdf | relative_url }}">Download CV (PDF)</a> <a class="btn" href="{{ '/cv/' | relative_url }}">View CV online</a></p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+---
+title: Students
+slug: students
+subtitle: Doctoral advisees and their placements, dissertation committees, and undergraduate honors students.
+permalink: /students/
+---
+{% assign st = site.data.students %}
+<h2>Doctoral advisees (chair or co-chair)</h2>
+{% for s in st.advisees %}
+<div class="student">
+  <strong>{{ s.name }}</strong> <span class="meta">{{ s.field }}, {{ s.years }}, {{ s.role }}</span>
+  <span class="placement">{{ s.placement }}</span>
+</div>
+{% endfor %}
+
+<h2>Dissertation committees ({{ st.committees | size }})</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Student</th><th>Field</th><th>Completion</th></tr></thead>
+  <tbody>
+  {% for s in st.committees %}<tr><td>{{ s.name }}</td><td>{{ s.field }}</td><td>{{ s.year }}</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>Undergraduate honors and master's research students</h2>
+<ul class="name-grid">
+{% for s in st.honors %}<li>{{ s.name }} ({{ s.year }})</li>{% endfor %}
+</ul>
+
+<h2>For prospective students</h2>
+<p><strong>PhD applicants.</strong> I advise students working in labor economics, health economics, and applied econometrics. Admission is through the <a href="{{ site.links.department }}">Department of Economics</a>; I chaired the PhD admissions committee from 2020 to 2023 and remain a member. If you are already admitted and would like to discuss working together, email me with a short note about the questions that interest you.</p>
+<p><strong>Master's applicants.</strong> See the <a href="{{ '/ma-econometrics/' | relative_url }}">Online MA in Econometrics</a> page.</p>
+<p><strong>Undergraduates at OU.</strong> I supervise honors theses and directed readings in labor, health, and applied econometrics. Students who have taken ECON 4233 or an equivalent regression course are best prepared.</p>

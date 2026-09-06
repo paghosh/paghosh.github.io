@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <strong>{{ site.author.name }}</strong><br>
+      {{ site.author.department }}, {{ site.author.university }}<br>
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    </div>
+    <div class="footer-right">
+      {% include profile-icons.html size="20" %}
+      <p class="footer-meta">
+        Last updated {{ site.time | date: "%B %-d, %Y" }}. Built with Jekyll and hosted on GitHub Pages.
+        <a href="{{ '/news/feed.xml' | relative_url }}">RSS</a>
+      </p>
+    </div>
+  </div>
+</footer>

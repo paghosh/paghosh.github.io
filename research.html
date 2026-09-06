@@ -1,0 +1,76 @@
+---
+title: Research
+slug: research
+subtitle: Econometric methods, labor and development economics, and health policy. Every published paper has a PDF, DOI, abstract, and BibTeX entry.
+permalink: /research/
+---
+{% assign pubs = site.data.publications %}
+{% assign pub_only = pubs | where: "status", "published" %}
+{% assign forth = pubs | where: "status", "forthcoming" %}
+{% assign published = pub_only | concat: forth | sort: "year" | reverse %}
+{% assign rr = pubs | where: "status", "rr" %}
+{% assign review = pubs | where: "status", "under_review" %}
+{% assign working = pubs | where: "status", "working" %}
+{% assign progress = pubs | where: "status", "in_progress" %}
+
+<ul class="toc">
+  <li><a href="#published">Published ({{ published | size }})</a></li>
+  <li><a href="#rr">Revise and resubmit ({{ rr | size }})</a></li>
+  <li><a href="#under-review">Under review ({{ review | size }})</a></li>
+  <li><a href="#working">Working papers ({{ working | size }})</a></li>
+  <li><a href="#in-progress">Work in progress ({{ progress | size }})</a></li>
+  <li><a href="#policy">Policy writing and media</a></li>
+</ul>
+
+<div class="filters" role="group" aria-label="Filter papers">
+  <span class="label">Area:</span>
+  <button class="chip" type="button" data-area="all" aria-pressed="true">All</button>
+  <button class="chip" type="button" data-area="labor" aria-pressed="false">Labor and development</button>
+  <button class="chip" type="button" data-area="econometrics" aria-pressed="false">Econometrics</button>
+  <button class="chip" type="button" data-area="health" aria-pressed="false">Health and policy</button>
+  <input class="search-box" type="search" placeholder="Search titles, coauthors, journals" aria-label="Search papers">
+  <span class="filter-count" aria-live="polite"></span>
+</div>
+
+<section class="research-section" id="published">
+  <h2>Published and forthcoming papers</h2>
+  {% for p in published %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
+<section class="research-section" id="rr">
+  <h2>Revise and resubmit</h2>
+  {% for p in rr %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
+<section class="research-section" id="under-review">
+  <h2>Under review</h2>
+  {% for p in review %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
+<section class="research-section" id="working">
+  <h2>Working papers</h2>
+  {% for p in working %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
+<section class="research-section" id="in-progress">
+  <h2>Work in progress</h2>
+  {% for p in progress %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
+<section id="policy">
+  <h2>Policy writing and media</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>The Indian Health Service is chronically underfunded. Here is how to close the gap.</h3>
+      <p>With Junying Zhao, Rashmi Jaggad, James R. Kennedye, Kylie Stewart, and Janis E. Campbell. An editor reviewed commentary in <em>Health Affairs Forefront</em> (September 2025) that lays out the size of the Indian Health Service funding gap and a framework for closing it.</p>
+      <p class="meta"><a href="https://doi.org/10.1377/forefront.20250827.319208">Read at Health Affairs</a></p>
+    </div>
+    <div class="card">
+      <h3>Quality or quantity: what matters more for tenure in economics?</h3>
+      <p>A video interview recorded at the 2019 American Economic Association meetings about my poster on publication quality, quantity, and tenure outcomes in economics departments.</p>
+      <p class="meta"><a href="{{ site.links.aea_video }}">Watch at the AEA</a></p>
+    </div>
+  </div>
+</section>
+
+<p class="small muted">Papers under review are listed without the journal name. Citation counts are from Google Scholar as of {{ site.metrics.as_of }}. PDFs are posted for personal scholarly use; the version of record is at the DOI link.</p>

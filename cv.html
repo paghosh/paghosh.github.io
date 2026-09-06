@@ -1,0 +1,111 @@
+---
+title: Curriculum Vitae
+slug: cv
+permalink: /cv/
+---
+{% assign cv = site.data.cv %}
+{% assign pubs = site.data.publications %}
+<div class="cv-actions">
+  <a class="btn btn-primary" href="{{ site.author.cv_pdf | relative_url }}">Download PDF ({{ site.author.cv_pdf_date }})</a>
+  <button class="btn" type="button" onclick="window.print()">Print this page</button>
+</div>
+
+<h2>Education</h2>
+{% for e in cv.education %}
+<div class="cv-row"><div class="what"><strong>{{ e.degree }}</strong>, {{ e.school }}{% if e.detail %}<span class="sub">{{ e.detail }}</span>{% endif %}</div><div class="when">{{ e.when }}</div></div>
+{% endfor %}
+
+<h2>Employment</h2>
+{% for e in cv.employment %}
+<div class="cv-row"><div class="what"><strong>{{ e.title }}</strong><span class="sub">{{ e.org }}</span></div><div class="when">{{ e.when }}</div></div>
+{% endfor %}
+
+<h2>Research interests</h2>
+<p>Econometrics, labor economics, health economics, and development economics.</p>
+
+{% assign labor = pubs | where: "status", "published" | where: "area", "labor" | sort: "year" | reverse %}
+{% assign metrics = pubs | where: "status", "published" | where: "area", "econometrics" | sort: "year" | reverse %}
+{% assign health = pubs | where: "status", "published" | where: "area", "health" | sort: "year" | reverse %}
+<h2>Refereed publications ({{ pubs | where: "status", "published" | size }})</h2>
+<p class="small muted">Author order as published. Full details, abstracts, and PDFs are on the <a href="{{ '/research/' | relative_url }}">Research</a> page.</p>
+
+<h3>Labor and development economics</h3>
+<ol class="numbered">
+{% for p in labor %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
+{% endfor %}
+</ol>
+
+<h3>Econometrics</h3>
+<ol class="numbered" start="{{ labor | size | plus: 1 }}">
+{% for p in metrics %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
+{% endfor %}
+</ol>
+
+<h3>Health economics and policy</h3>
+{% assign start3 = labor | size | plus: 1 | plus: metrics.size %}
+<ol class="numbered" start="{{ start3 }}">
+{% for p in health %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.{% if p.note %} <span class="muted small">{{ p.note }}</span>{% endif %}</li>
+{% endfor %}
+</ol>
+
+<h2>Manuscripts under review or revision</h2>
+{% assign rr = pubs | where: "status", "rr" %}
+{% assign review = pubs | where: "status", "under_review" %}
+{% assign working = pubs | where: "status", "working" %}
+<h3>Revise and resubmit</h3>
+<ol class="numbered">{% for p in rr %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
+<h3>Under review</h3>
+<ol class="numbered">{% for p in review %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
+<h3>Working papers</h3>
+<ol class="numbered">{% for p in working %}<li>{{ p.title }}</li>{% endfor %}</ol>
+
+<h2>Work in progress</h2>
+{% assign progress = pubs | where: "status", "in_progress" %}
+<ol class="numbered">{% for p in progress %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
+
+<h2>Invited talks and conference presentations</h2>
+<ul class="year-list">
+{% for t in cv.talks %}<li><span class="yr">{{ t.year }}</span><span>{{ t.venues }}</span></li>{% endfor %}
+</ul>
+
+<h2>Awards and honors</h2>
+<ul class="year-list">
+{% for a in cv.awards %}<li><span class="yr">{{ a.year }}</span><span>{{ a.text }}</span></li>{% endfor %}
+</ul>
+
+<h2>Funding and leave</h2>
+<ul>
+{% for f in cv.funding %}<li>{{ f.text }}</li>{% endfor %}
+</ul>
+
+<h2>Refereeing and professional service</h2>
+<p>{{ cv.refereeing.summary }}</p>
+<p class="small">{% for j in cv.refereeing.journals %}<em>{{ j.name }}</em>{% if j.n > 1 %} ({{ j.n }}){% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}.</p>
+
+<h2>Departmental and university service</h2>
+{% for s in cv.service %}
+<div class="cv-row"><div class="what">{{ s.text }}{% if s.detail %}<span class="sub">{{ s.detail }}</span>{% endif %}</div><div class="when">{{ s.when }}</div></div>
+{% endfor %}
+
+<h2>Teaching</h2>
+{% for group in site.data.teaching %}
+<h3>{{ group.level }}</h3>
+{% for c in group.courses %}
+<div class="cv-row"><div class="what">{{ c.title }} <span class="muted small">{{ c.code }}</span></div><div class="when">{{ c.when }}</div></div>
+{% endfor %}
+{% endfor %}
+<div class="cv-row"><div class="what">Labor Economics, Syracuse University</div><div class="when">Summer 2012</div></div>
+
+<h2>Doctoral students</h2>
+<h3>Chair or co-chair</h3>
+{% for s in site.data.students.advisees %}
+<div class="cv-row"><div class="what"><strong>{{ s.name }}</strong>, {{ s.field }} ({{ s.role }})<span class="sub">{{ s.placement }}</span></div><div class="when">{{ s.years }}</div></div>
+{% endfor %}
+<h3>Dissertation committees ({{ site.data.students.committees | size }})</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Student</th><th>Field</th><th>Completion</th></tr></thead>
+<tbody>{% for s in site.data.students.committees %}<tr><td>{{ s.name }}</td><td>{{ s.field }}</td><td>{{ s.year }}</td></tr>{% endfor %}</tbody>
+</table></div>
+
+<h2>Undergraduate honors and master's research students</h2>
+<p>{% for s in site.data.students.honors %}{{ s.name }} ({{ s.year }}){% unless forloop.last %}, {% endunless %}{% endfor %}.</p>
