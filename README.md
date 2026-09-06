@@ -1,6 +1,6 @@
 # paghosh.github.io
 
-Source for Pallab Ghosh's academic website, https://paghosh.github.io. Built with Jekyll and served by GitHub Pages. Every push to `main` rebuilds the site within a couple of minutes.
+Source for Pallab Ghosh's academic website, https://paghosh.github.io. Built with Jekyll and served by GitHub Pages (native Jekyll build, no Actions workflow). Every push to `main` rebuilds the site within a couple of minutes; if it does not, check Settings, then Pages, in the repository.
 
 ## How to update the site
 
@@ -15,7 +15,7 @@ All content lives in plain text files under `_data/`. You never need to touch HT
 | Update talks, awards, service, refereeing | `_data/cv.yml` |
 | Update the reading list | `_data/books.yml` |
 | Change name, email, phone, profile IDs, citation counts | `_config.yml` |
-| Replace the CV PDF | overwrite `assets/cv/CV_Pallab_Ghosh.pdf` and update `cv_pdf_date` in `_config.yml` |
+| Rebuild the CV PDF | run `python3 scripts/build_cv.py` (needs pdflatex and pyyaml); it regenerates `assets/cv/CV_Pallab_Ghosh.pdf` from the data files, then update `cv_pdf_date` in `_config.yml` |
 | Replace the headshot | overwrite `assets/img/headshot.jpg` (square, at least 500 by 500 pixels) |
 | Rewrite the bio | `index.html`, the three paragraphs inside `<div class="bio">` |
 
@@ -38,7 +38,7 @@ Change `status: under_review` to `status: published`, add `journal`, `year`, `do
 
 ### Status values
 
-`published`, `forthcoming`, `rr` (revise and resubmit), `under_review`, `working`, `in_progress`. Unpublished papers deliberately carry no journal name.
+`published`, `forthcoming`, `rr` (revise and resubmit), `reject_resubmit`, `under_review`, `working`, `in_progress`. Unpublished papers deliberately carry no journal name, and the site shows only "with coauthor names" for them rather than an author order.
 
 ## Local preview (optional)
 
@@ -59,4 +59,6 @@ Then open http://localhost:4000.
 - `assets/css/main.css` the theme (light and dark)
 - `assets/js/main.js` theme toggle, mobile menu, abstract and BibTeX panels, research filters, book filters
 - `index.html`, `research.html`, `cv.html`, `teaching.html`, `students.html`, `ma-econometrics.md`, `news.html`, `books.html`, `contact.html`, `404.html`
-- `news/feed.xml` RSS feed generated from `_data/news.yml`
+- `news/feed.xml` and `feed.xml` RSS feed generated from `_data/news.yml`
+- `scripts/build_cv.py` regenerates the CV PDF from the data files
+- `cv_source/CV_Pallab_Ghosh.tex` the generated LaTeX source of the CV PDF (do not edit by hand)

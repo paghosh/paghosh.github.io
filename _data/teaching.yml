@@ -4,60 +4,60 @@
     - code: ECON 5243
       title: Econometrics II
       when: Fall 2014 to Spring 2021; Spring 2026
-      description: Second semester of the PhD econometrics sequence. Panel data, instrumental variables, GMM, limited dependent variables, quantile regression, and program evaluation, with replication of published papers in Stata and Python.
+      description: "Second semester of the doctoral econometrics sequence: panel data, instrumental variables, limited dependent variables, quantile regression, and program evaluation."
     - code: ECON 6433
       title: Labor Economics I
       when: Fall 2020, 2022, 2024, 2026
-      description: Field course in labor economics. Labor supply and demand, human capital, wage structure and inequality, discrimination, family economics, and the effects of automation and artificial intelligence on the labor market.
+      description: "Doctoral field course in labor economics: labor supply and demand, human capital, wage structure and inequality, discrimination, and family economics."
     - code: ECON 6970
       title: Labor Economics II
       when: Spring 2019
-      description: Second field course, with emphasis on empirical methods and student research projects.
+      description: "Second doctoral field course in labor economics."
     - code: ECON 5970
       title: Applied Econometrics Seminar
       when: Spring 2022, 2023
-      description: Research seminar in which doctoral students present and replicate applied microeconometric papers.
+      description: "Doctoral seminar in applied econometrics."
 - level: Master's
   courses:
     - code: ECON 5213
       title: Advanced Econometrics (Online MA in Econometrics)
       when: Spring 2025, 2026
-      description: Statistical foundations and regression methods for the Online MA in Econometrics, taught in Python with real data.
+      description: "Regression methods and their applications for the Online MA in Econometrics, taught in Python."
     - code: ECON 5083
       title: Applied Labor Economics (Online MA in Econometrics)
       when: Summer 2026
-      description: Labor market analysis for master's students, from wage determination and inequality to policy evaluation, with hands-on Python study guides.
+      description: "Labor economics for master's students, from wage determination and inequality to policy evaluation, with Python study guides."
     - code: DSA 5031
       title: Econometrics for Data Science (Online MS in Data Science and Analytics)
       when: Summer 2021, 2023, 2025 (two sections), 2026
-      description: Causal inference and regression for data scientists. Regression, instrumental variables, difference in differences, regression discontinuity, and machine learning for prediction versus causal questions.
+      description: "Regression and causal inference for data scientists in the Online MS in Data Science and Analytics."
 - level: Undergraduate
   courses:
     - code: ECON 4233
       title: Introduction to Applied Econometrics
       when: Spring 2025, 2026
-      description: A first course in regression analysis and causal thinking for economics majors, using Python and real data sets.
+      description: "A first course in regression analysis and causal thinking for economics majors."
     - code: ECON 4513
       title: Economics of Discrimination
       when: Spring 2024
-      description: Theories and evidence on labor market discrimination by gender, race, and ethnicity; measurement, decomposition methods, and policy.
+      description: "Theories and evidence on labor market discrimination by gender, race, and ethnicity, and the policies that address it."
     - code: ECON 3513
       title: Labor Problems
       when: Spring 2024; Fall 2025; Fall 2026
-      description: Labor economics for undergraduates in a flipped, problem solving format. Every chapter connects to automation, robotics, and artificial intelligence.
+      description: "Labor economics for undergraduates: employment, wages, unions, inequality, and the labor market effects of technology."
     - code: ECON 3113
       title: Intermediate Microeconomics
       when: Fall and Spring, 2015 to 2020
-      description: Consumer and producer theory, market structure, and welfare analysis with calculus.
+      description: "Consumer and producer theory, market structure, and welfare analysis."
     - code: ECON 3113
       title: Intermediate Microeconomics (Honors)
       when: Fall 2024; Spring 2025; Fall 2025
-      description: Honors section with additional depth and a research writing component.
+      description: "Honors section of intermediate microeconomics."
     - code: ECON 1123
       title: Principles of Microeconomics
       when: Fall and Spring, 2018 to 2022
-      description: Introduction to economic reasoning, markets, and public policy.
-    - code: ECON 3980 and 4970
+      description: "Introduction to economic reasoning, markets, and public policy."
+    - code: Honors research and directed readings
       title: Undergraduate Honors Research and Directed Readings
       when: Fall 2016 to Fall 2026
-      description: Individual supervision of honors theses and reading courses, twelve students to date.
+      description: "Individual supervision of honors theses and reading courses."

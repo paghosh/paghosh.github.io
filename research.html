@@ -1,7 +1,7 @@
 ---
 title: Research
 slug: research
-subtitle: Econometric methods, labor and development economics, and health policy. Every published paper has a PDF, DOI, abstract, and BibTeX entry.
+subtitle: Econometric methods, labor and development economics, and health policy. Every published paper has a DOI and a BibTeX entry, and most have a PDF and an abstract.
 permalink: /research/
 ---
 {% assign pubs = site.data.publications %}
@@ -9,6 +9,7 @@ permalink: /research/
 {% assign forth = pubs | where: "status", "forthcoming" %}
 {% assign published = pub_only | concat: forth | sort: "year" | reverse %}
 {% assign rr = pubs | where: "status", "rr" %}
+{% assign rejres = pubs | where: "status", "reject_resubmit" %}
 {% assign review = pubs | where: "status", "under_review" %}
 {% assign working = pubs | where: "status", "working" %}
 {% assign progress = pubs | where: "status", "in_progress" %}
@@ -16,6 +17,7 @@ permalink: /research/
 <ul class="toc">
   <li><a href="#published">Published ({{ published | size }})</a></li>
   <li><a href="#rr">Revise and resubmit ({{ rr | size }})</a></li>
+  <li><a href="#reject-resubmit">Reject and resubmit ({{ rejres | size }})</a></li>
   <li><a href="#under-review">Under review ({{ review | size }})</a></li>
   <li><a href="#working">Working papers ({{ working | size }})</a></li>
   <li><a href="#in-progress">Work in progress ({{ progress | size }})</a></li>
@@ -42,6 +44,11 @@ permalink: /research/
   {% for p in rr %}{% include paper.html paper=p %}{% endfor %}
 </section>
 
+<section class="research-section" id="reject-resubmit">
+  <h2>Reject and resubmit</h2>
+  {% for p in rejres %}{% include paper.html paper=p %}{% endfor %}
+</section>
+
 <section class="research-section" id="under-review">
   <h2>Under review</h2>
   {% for p in review %}{% include paper.html paper=p %}{% endfor %}
@@ -61,16 +68,16 @@ permalink: /research/
   <h2>Policy writing and media</h2>
   <div class="cards">
     <div class="card">
-      <h3>The Indian Health Service is chronically underfunded. Here is how to close the gap.</h3>
+      <h3>The Indian Health Service Is Chronically Underfunded. Here Is How To Close The Gap</h3>
       <p>With Junying Zhao, Rashmi Jaggad, James R. Kennedye, Kylie Stewart, and Janis E. Campbell. An editor reviewed commentary in <em>Health Affairs Forefront</em> (September 2025) that lays out the size of the Indian Health Service funding gap and a framework for closing it.</p>
       <p class="meta"><a href="https://doi.org/10.1377/forefront.20250827.319208">Read at Health Affairs</a></p>
     </div>
     <div class="card">
-      <h3>Quality or quantity: what matters more for tenure in economics?</h3>
-      <p>A video interview recorded at the 2019 American Economic Association meetings about my poster on publication quality, quantity, and tenure outcomes in economics departments.</p>
+      <h3>Pallab Ghosh on tenure in economics</h3>
+      <p>A video interview recorded at the 2019 American Economic Association meetings about my poster, "Quality vs Quantity: What Does Matter More for Tenure in Economics?"</p>
       <p class="meta"><a href="{{ site.links.aea_video }}">Watch at the AEA</a></p>
     </div>
   </div>
 </section>
 
-<p class="small muted">Papers under review are listed without the journal name. Citation counts are from Google Scholar as of {{ site.metrics.as_of }}. PDFs are posted for personal scholarly use; the version of record is at the DOI link.</p>
+<p class="small muted">Papers under review or in revision are listed without the journal name. Citation counts are from Google Scholar as of {{ site.metrics.as_of }}. PDFs are posted for personal scholarly use; the version of record is at the DOI link.</p>

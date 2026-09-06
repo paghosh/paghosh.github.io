@@ -19,7 +19,7 @@
   - title: 'Lifespan: Why We Age and Why We Don''t Have To'
     by: David Sinclair
   - title: 'Poor Charlie''s Almanack: The Essential Wit and Wisdom of Charles T. Munger'
-    by: Charles T. Munger
+    by: Charles T. Munger, edited by Peter D. Kaufman
   - title: 'The Rational Optimist: How Prosperity Evolves'
     by: Matt Ridley
   - title: Leadership
@@ -270,7 +270,7 @@
   - title: 'Flow: The Psychology of Optimal Experience'
     by: Mihaly Csikszentmihalyi
   - title: 'Atlas of the Heart: Mapping Meaningful Connection'
-    by: Brene Brown
+    by: Brené Brown
   - title: Emotional Intelligence 2.0
     by: Travis Bradberry and Jean Greaves
   - title: 'Think Again: The Power of Knowing What You Don''t Know'
@@ -344,7 +344,7 @@
   - title: The Yoga Sutras of Patanjali
     by: Patanjali
   - title: Midnights with the Mystic
-    by: Sadhguru
+    by: Cheryl Simone and Sadhguru
   - title: The Code of the Extraordinary Mind
     by: Vishen Lakhiani
   - title: The Bhagavad Gita
@@ -360,8 +360,6 @@
     by: Jim Afremow
   - title: The Art of Happiness
     by: Dalai Lama and Howard Cutler
-  - title: Revolution
-    by: Walter Isaacson
 - name: Wishlist
   key: wishlist
   books:
@@ -374,7 +372,6 @@
   - title: The Catalyst
     by: Jonah Berger
   - title: 'Definiteness of Purpose: The Foundation of Success'
-    by: Napoleon Hill
   - title: The Beginning of Infinity
     by: David Deutsch
   - title: A Mind for Sales
@@ -395,7 +392,7 @@
     by: Elizabeth Pantley
   - title: The Upanishads
   - title: Serpent Rising
-    by: Mary Mueller Shutan
+    by: Neven Paar
   - title: Meditations for Breaking the Habit of Being Yourself
     by: Joe Dispenza
   - title: A Man for All Markets
@@ -407,7 +404,6 @@
   - title: Don't Believe Everything You Think
     by: Joseph Nguyen
   - title: The Power of Self-Discipline
-    by: Peter Hollins
   - title: The Communication Book
     by: Mikael Krogerus and Roman Tschappeler
   - title: The War of Art

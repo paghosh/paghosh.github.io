@@ -50,10 +50,13 @@ permalink: /cv/
 
 <h2>Manuscripts under review or revision</h2>
 {% assign rr = pubs | where: "status", "rr" %}
+{% assign rejres = pubs | where: "status", "reject_resubmit" %}
 {% assign review = pubs | where: "status", "under_review" %}
 {% assign working = pubs | where: "status", "working" %}
 <h3>Revise and resubmit</h3>
 <ol class="numbered">{% for p in rr %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
+<h3>Reject and resubmit</h3>
+<ol class="numbered">{% for p in rejres %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
 <h3>Under review</h3>
 <ol class="numbered">{% for p in review %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
 <h3>Working papers</h3>

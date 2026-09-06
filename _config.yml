@@ -24,7 +24,7 @@ author:
   map_url: https://maps.google.com/?q=308+Cate+Center+Drive,+Norman,+OK+73072
   photo: /assets/img/headshot.jpg
   cv_pdf: /assets/cv/CV_Pallab_Ghosh.pdf
-  cv_pdf_date: May 26, 2026
+  cv_pdf_date: September 2026
 
 profiles:
   scholar: QWA-vfoAAAAJ
@@ -92,6 +92,7 @@ exclude:
   - .github
   - scripts
   - "*.sh"
+  - cv_source
 
 defaults:
   - scope: { path: "" }

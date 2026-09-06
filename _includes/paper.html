@@ -1,19 +1,25 @@
 {% assign p = include.paper %}
-{% assign compact = include.compact | default: false %}
+{% assign unpublished = false %}
+{% if p.status == "rr" or p.status == "reject_resubmit" or p.status == "under_review" or p.status == "working" or p.status == "in_progress" %}{% assign unpublished = true %}{% endif %}
 <article class="paper" id="{{ p.id }}" data-area="{{ p.area }}" data-status="{{ p.status }}">
   <h3 class="paper-title">
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% elsif p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
     {% if p.status == "forthcoming" %}<span class="badge">Forthcoming</span>{% endif %}
     {% if p.status == "rr" %}<span class="badge">Revise and resubmit</span>{% endif %}
+    {% if p.status == "reject_resubmit" %}<span class="badge">Reject and resubmit</span>{% endif %}
     {% if p.status == "under_review" %}<span class="badge">Under review</span>{% endif %}
     {% if p.status == "working" %}<span class="badge">Working paper</span>{% endif %}
     {% if p.citations %}<span class="badge badge-cite" title="Google Scholar citations, {{ site.metrics.as_of }}">{{ p.citations }} citations</span>{% endif %}
   </h3>
+  {% if unpublished %}
+    {% assign coauthors = "" %}{% assign n = 0 %}
+    {% for a in p.authors %}{% unless a == site.author.name %}{% assign n = n | plus: 1 %}{% if n > 1 %}{% assign coauthors = coauthors | append: ", " %}{% endif %}{% assign coauthors = coauthors | append: a %}{% endunless %}{% endfor %}
+    {% if n > 0 %}<p class="paper-authors">with {{ coauthors }}</p>{% endif %}
+  {% else %}
   <p class="paper-authors">{% for a in p.authors %}{% if a == site.author.name %}<span class="me">{{ a }}</span>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  {% endif %}
   {% if p.journal %}
   <p class="paper-venue"><em>{{ p.journal }}</em>{% if p.year %}, {{ p.year }}{% endif %}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</p>
-  {% elsif p.summary %}
-  <p class="paper-summary">{{ p.summary }}</p>
   {% endif %}
   {% if p.note %}<p class="paper-note">{{ p.note }}</p>{% endif %}
   {% if p.pdf or p.doi or p.url or p.abstract or p.bibtex %}

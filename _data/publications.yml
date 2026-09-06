@@ -9,7 +9,7 @@
 
 - id: ghosh2026flu
   title: "Stay healthy, stay employed: how flu vaccination might impact women's earnings"
-  authors: ["Pallab Ghosh", "Firat Demir", "Myongjin Kim", "Ahmed Chaudhuri", "Junying Zhao"]
+  authors: ["Pallab Ghosh", "Firat Demir", "Myongjin Kim", "Ahmed Chaudhry", "Junying Zhao"]
   journal: "Applied Economics"
   year: 2026
   pages: "1-16"
@@ -30,7 +30,7 @@
     children.
   bibtex: |
     @article{ghosh2026flu,
-      author  = {Ghosh, Pallab and Demir, Firat and Kim, Myongjin and Chaudhuri, Ahmed and Zhao, Junying},
+      author  = {Ghosh, Pallab and Demir, Firat and Kim, Myongjin and Chaudhry, Ahmed and Zhao, Junying},
       title   = {Stay healthy, stay employed: how flu vaccination might impact women's earnings},
       journal = {Applied Economics},
       year    = {2026},
@@ -183,7 +183,7 @@
     }
 
 - id: ghosh2020minimumwage
-  title: "Do State Minimum Wages Affect Incarceration Rate?"
+  title: "Do State Minimum Wages Affect the Incarceration Rate?"
   authors: ["Pallab Ghosh", "Gary A. Hoover", "Zexuan Liu"]
   journal: "Southern Economic Journal"
   year: 2020
@@ -209,7 +209,7 @@
   bibtex: |
     @article{ghosh2020minimumwage,
       author  = {Ghosh, Pallab and Hoover, Gary A. and Liu, Zexuan},
-      title   = {Do State Minimum Wages Affect Incarceration Rate?},
+      title   = {Do State Minimum Wages Affect the Incarceration Rate?},
       journal = {Southern Economic Journal},
       year    = {2020},
       volume  = {86},
@@ -611,20 +611,10 @@
   journal: "Health Affairs Forefront"
   year: 2025
   doi: "10.1377/forefront.20250827.319208"
-  url: "https://www.healthaffairs.org/content/forefront"
   area: health
   status: published
   featured: false
   note: "Editor reviewed commentary, not a peer reviewed research article."
-  abstract: >
-    This commentary explains why the Indian Health Service, which serves American Indian and Alaska
-    Native people under the federal trust responsibility, has remained chronically underfunded for
-    decades. It traces where in the federal budget planning and appropriations process the shortfalls
-    arise and contrasts the discretionary funding the agency actually receives with the mandatory
-    spending its trust obligation implies. Drawing on the authors' companion research in Value in
-    Health, it lays out concrete legislative and administrative options, including mandatory spending
-    and sequestration exemption, that could close the funding gap. (Abstract summarized from the
-    publisher page.)
   bibtex: |
     @misc{zhao2025forefront,
       author       = {Zhao, Junying and Jaggad, Rashmi and Ghosh, Pallab and Kennedye, James R. and Stewart, Kylie and Campbell, Janis E.},
@@ -734,7 +724,7 @@
 
 - id: ghosh2024hpv
   title: "Impacts of the US CDC recommendation on human papillomavirus vaccine uptake, 2010-2015"
-  authors: ["Pallab Ghosh", "Ahmed Chaudhuri", "Janis E. Campbell", "Myongjin Kim", "Kyle Smith", "Firat Demir", "Junying Zhao"]
+  authors: ["Pallab Ghosh", "Ahmed Chaudhry", "Janis E. Campbell", "Myongjin Kim", "Kyle Smith", "Firat Demir", "Junying Zhao"]
   journal: "Frontiers in Public Health"
   year: 2024
   volume: "12"
@@ -767,7 +757,7 @@
     policies.
   bibtex: |
     @article{ghosh2024hpv,
-      author  = {Ghosh, Pallab and Chaudhuri, Ahmed and Campbell, Janis E. and Kim, Myongjin and Smith, Kyle and Demir, Firat and Zhao, Junying},
+      author  = {Ghosh, Pallab and Chaudhry, Ahmed and Campbell, Janis E. and Kim, Myongjin and Smith, Kyle and Demir, Firat and Zhao, Junying},
       title   = {Impacts of the US CDC recommendation on human papillomavirus vaccine uptake, 2010--2015},
       journal = {Frontiers in Public Health},
       year    = {2024},
@@ -832,7 +822,6 @@
   area: health
   status: rr
   featured: false
-  summary: "This study examines whether the hepatitis B birth dose vaccine reduces neonatal mortality and what vaccine hesitancy costs in newborn lives."
 
 - id: ghosh2026maternalimmunization
   title: "Maternal Immunization, State Medicaid Expansion, and National ACA Interplay for Infant Mortality: A US Pooled Cross-sectional Triple-difference Study"
@@ -840,15 +829,13 @@
   area: health
   status: rr
   featured: false
-  summary: "This study asks how maternal immunization, state Medicaid expansion, and the national Affordable Care Act jointly affect infant mortality in the United States."
 
 - id: ghosh2026uqrendogeneity
   title: "Unconditional Quantile Regressions Under Endogeneity"
   authors: ["Pallab Ghosh"]
   area: econometrics
-  status: rr
+  status: reject_resubmit
   featured: false
-  summary: "This study extends unconditional quantile regression to settings in which an explanatory variable is endogenous."
 
 # ---------------------------------------------------------------------------
 # Under review
@@ -860,7 +847,6 @@
   area: labor
   status: under_review
   featured: false
-  summary: "This study examines how gender bias shapes coauthorship networks and publication outcomes in the economics profession."
 
 - id: ghosh2026shenhav
   title: "The Relative Wage and Marriage after 2010: A Comment on Shenhav (2021)"
@@ -869,7 +855,6 @@
   status: under_review
   featured: false
   note: "Mahla Shourian is the corresponding author."
-  summary: "This study revisits the relationship between the relative wage of women and marriage rates in the United States after 2010, extending the analysis of Shenhav (2021)."
 
 - id: ghosh2026computerization
   title: "Does Computerization Affect Crime?"
@@ -877,7 +862,6 @@
   area: labor
   status: under_review
   featured: false
-  summary: "This study examines whether the spread of computerization across local labor markets changes crime rates."
 
 - id: ghosh2026childrenwitness
   title: "Children Who Witness: Early Life Exposure to Unilateral Divorce Laws and the Likelihood of being a Victim of Intimate Partner Violence"
@@ -885,7 +869,6 @@
   area: labor
   status: under_review
   featured: false
-  summary: "This study asks whether childhood exposure to unilateral divorce laws changes the likelihood of experiencing intimate partner violence in adulthood."
 
 - id: ghosh2026marriagemarket
   title: "When the Marriage Market Fails: How Changes in Relative Wages Shape Childbearing Decisions"
@@ -893,7 +876,6 @@
   area: labor
   status: under_review
   featured: false
-  summary: "This study examines how changes in the relative wages of men and women affect marriage markets and childbearing decisions."
 
 - id: ghosh2026nepalearthquake
   title: "Shaken to the Core: The Effect of Nepal's 2015 Earthquake on Infant Death"
@@ -901,7 +883,6 @@
   area: labor
   status: under_review
   featured: false
-  summary: "This study examines the effect of the 2015 Nepal earthquake on infant mortality."
 
 # ---------------------------------------------------------------------------
 # Working paper
@@ -913,7 +894,6 @@
   area: labor
   status: working
   featured: false
-  summary: "This study estimates the long run degree of substitutability between male and female labor in production."
 
 # ---------------------------------------------------------------------------
 # Work in progress
@@ -925,7 +905,6 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines whether the opioid epidemic contributed to changes in teen fertility in the United States."
 
 - id: ghosh2026oxycontinhomicide
   title: "Prescription to Peril: OxyContin Penetration and Intimate Partner Homicide in the United States"
@@ -933,7 +912,6 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines the relationship between the market penetration of OxyContin and intimate partner homicide in the United States."
 
 - id: ghosh2026arabspring
   title: "Revolution and Reproduction: How the Arab Spring Reshaped Marriage and Fertility in Egypt"
@@ -941,7 +919,6 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines how the Arab Spring protests affected marriage and fertility decisions in Egypt."
 
 - id: ghosh2026btcotton
   title: "Bt Cotton Adoption and Socioeconomic Outcomes: Evidence from India"
@@ -949,7 +926,6 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines the socioeconomic consequences of the adoption of genetically modified Bt cotton in India."
 
 - id: ghosh2026recentered
   title: "Recentered Formula Instruments in Panel Data with Dynamic Treatment Exposure"
@@ -957,7 +933,6 @@
   area: econometrics
   status: in_progress
   featured: false
-  summary: "This study develops recentered formula instruments for panel data settings in which treatment exposure evolves over time."
 
 - id: ghosh2026marijuanavaccination
   title: "Marijuana and Demand for Vaccination"
@@ -965,7 +940,6 @@
   area: health
   status: in_progress
   featured: false
-  summary: "This study examines whether marijuana legalization and use affect the demand for vaccination."
 
 - id: ghosh2026maternalstress
   title: "Does Maternal Stress During Pregnancy Affect Children's Mental Health in Adulthood?"
@@ -973,7 +947,6 @@
   area: health
   status: in_progress
   featured: false
-  summary: "This study asks whether maternal stress during pregnancy has lasting effects on the mental health of children once they reach adulthood."
 
 - id: ghosh2026obesity
   title: "Environmental Causes of the Obesity Epidemic"
@@ -981,7 +954,6 @@
   area: health
   status: in_progress
   featured: false
-  summary: "This study examines environmental contributors to the rise in obesity."
 
 - id: ghosh2026snapparadox
   title: "The SNAP Paradox: Does Food Assistance Encourage Teen Childbearing?"
@@ -989,7 +961,6 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines whether access to SNAP food assistance affects teen childbearing."
 
 - id: ghosh2026nepalmigration
   title: "Escaping Violence or Trapped by It? Long Run Effects of Civil Conflict on International Migration in Nepal"
@@ -997,4 +968,3 @@
   area: labor
   status: in_progress
   featured: false
-  summary: "This study examines the long run effects of exposure to the Nepal civil war on international migration."
