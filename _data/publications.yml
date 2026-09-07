@@ -51,6 +51,7 @@
   area: labor
   status: published
   featured: true
+  rank: 5
   abstract: >
     This paper examines the effects of political protests during the Egyptian revolution between 2011
     and 2014 on "missing women" in Egypt. The term "missing women" refers to the number of women missing
@@ -122,6 +123,7 @@
   area: labor
   status: published
   featured: true
+  rank: 4
   citations: 16
   abstract: >
     Breastfeeding has significant health and human capital effects on both mothers and infants. However,
@@ -158,6 +160,7 @@
   area: labor
   status: published
   featured: true
+  rank: 3
   citations: 46
   abstract: >
     Coauthorship has become the new norm in academics since the early 1970s because it enhances
@@ -304,6 +307,7 @@
   area: labor
   status: published
   featured: true
+  rank: 2
   citations: 12
   abstract: >
     This paper proposes a semi-parametric procedure to determine the contribution of human capital
@@ -452,6 +456,7 @@
   area: econometrics
   status: published
   featured: true
+  rank: 1
   citations: 24
   abstract: >
     This paper is a narrow replication of Firpo, Fortin and Lemieux (Unconditional quantile
@@ -612,7 +617,7 @@
   year: 2025
   doi: "10.1377/forefront.20250827.319208"
   area: health
-  status: published
+  status: commentary
   featured: false
   note: "Editor reviewed commentary, not a peer reviewed research article."
   bibtex: |
@@ -779,6 +784,7 @@
   area: health
   status: published
   featured: true
+  rank: 6
   citations: 22
   abstract: >
     As of Aug. 2, 2021, 1693 injury claims associated with COVID-19 medical countermeasures have been

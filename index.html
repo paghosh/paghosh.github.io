@@ -1,9 +1,13 @@
 ---
-title: Home
+title: Pallab Ghosh
 slug: home
 hide_title: true
 permalink: /
+description: Pallab Ghosh is an Associate Professor of Economics at the University of Oklahoma and Director of the Online MA in Econometrics. Research in econometrics, labor, health, and development economics.
 ---
+{% assign published = site.data.publications | where: "status", "published" %}
+{% assign commentary = site.data.publications | where: "status", "commentary" %}
+{% assign npubs = published | size | plus: commentary.size %}
 <section class="hero">
   <div class="hero-photo">
     <img src="{{ site.author.photo | relative_url }}" alt="Portrait of Pallab Ghosh" width="548" height="538" fetchpriority="high">
@@ -24,18 +28,26 @@ permalink: /
       <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Research</a>
       <a class="btn" href="{{ site.author.cv_pdf | relative_url }}">Download CV (PDF)</a>
       <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
+      <button class="btn" type="button" data-copy-text="{{ site.author.email }}" data-copy-label="Email address">Copy email</button>
     </div>
     {% include profile-icons.html %}
   </div>
 </section>
 
+<div class="glance" aria-label="At a glance">
+  <div class="metric"><div class="num">{{ npubs }}</div><div class="lbl"><a href="{{ '/research/' | relative_url }}">Publications</a>, {{ published | size }} refereed</div></div>
+  <div class="metric"><div class="num">{{ site.metrics.citations }}</div><div class="lbl"><a href="{{ site.links.scholar }}">Google Scholar citations</a>, h-index {{ site.metrics.h_index }}</div></div>
+  <div class="metric"><div class="num">{{ site.data.students.advisees | size }}</div><div class="lbl"><a href="{{ '/students/' | relative_url }}">PhD dissertations chaired</a>, {{ site.data.students.committees | size }} committees</div></div>
+  <div class="metric"><div class="num">2026</div><div class="lbl"><a href="{{ '/teaching/' | relative_url }}">Merrick Foundation Teaching Award</a></div></div>
+</div>
+
 <div class="two-col">
   <div>
     <div class="section-head">
       <h2>Selected publications</h2>
-      <a href="{{ '/research/' | relative_url }}">All {{ site.data.publications | where: "status", "published" | size }} papers</a>
+      <a href="{{ '/research/' | relative_url }}">All {{ npubs }} publications</a>
     </div>
-    {% assign featured = site.data.publications | where: "featured", true | sort: "year" | reverse %}
+    {% assign featured = site.data.publications | where: "featured", true | sort: "rank" %}
     {% for p in featured %}
       {% include paper.html paper=p %}
     {% endfor %}
@@ -45,7 +57,7 @@ permalink: /
       <h2>Citations</h2>
       <a href="{{ site.links.scholar }}">Google Scholar</a>
     </div>
-    <div class="metrics" style="grid-template-columns: repeat(3, 1fr); margin-top: 1rem;">
+    <div class="metrics">
       <div class="metric"><div class="num">{{ site.metrics.citations }}</div><div class="lbl">Citations</div></div>
       <div class="metric"><div class="num">{{ site.metrics.h_index }}</div><div class="lbl">h-index</div></div>
       <div class="metric"><div class="num">{{ site.metrics.i10_index }}</div><div class="lbl">i10-index</div></div>
@@ -58,14 +70,14 @@ permalink: /
     </div>
     <ul class="news-list">
       {% assign news = site.data.news | sort: "date" | reverse %}
-      {% for n in news limit: 8 %}
+      {% for n in news limit: 5 %}
       <li><time datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: "%b %Y" }}</time><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
       {% endfor %}
     </ul>
-
-    <div class="section-head">
-      <h2>Prospective students</h2>
-    </div>
-    <p class="small">I advise doctoral students in labor, health, and applied econometrics, and I direct OU's fully online <a href="{{ '/ma-econometrics/' | relative_url }}">MA in Econometrics</a>. See the <a href="{{ '/students/' | relative_url }}">Students</a> page for placements and how to get in touch.</p>
   </aside>
 </div>
+
+<section class="section-head" style="margin-top: 2.5rem;">
+  <h2>Prospective students</h2>
+</section>
+<p>I advise doctoral students in labor economics, health economics, and applied econometrics, and I direct OU's fully online <a href="{{ '/ma-econometrics/' | relative_url }}">MA in Econometrics</a>. See the <a href="{{ '/students/' | relative_url }}">Students</a> page for placements and how to get in touch.</p>

@@ -3,6 +3,7 @@ title: Online MA in Econometrics
 slug: ma-econometrics
 subtitle: A fully online, 30 credit hour master's degree from the University of Oklahoma's Department of Economics. I have directed the program since July 2023.
 permalink: /ma-econometrics/
+description: The University of Oklahoma's fully online MA in Econometrics, directed by Pallab Ghosh: who it is for, what students learn, and how to apply.
 ---
 
 <div class="callout">

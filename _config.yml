@@ -59,8 +59,6 @@ nav:
   - { title: Contact, url: /contact/ }
 
 # jekyll-seo-tag
-twitter:
-  card: summary
 logo: /assets/img/headshot.jpg
 social:
   name: Pallab Ghosh
@@ -96,4 +94,4 @@ exclude:
 
 defaults:
   - scope: { path: "" }
-    values: { layout: default }
+    values: { layout: default, image: /assets/img/og-image.jpg }

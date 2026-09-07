@@ -6,7 +6,7 @@
 <body class="page-{{ page.slug | default: page.title | slugify }}">
   <a class="skip-link" href="#main">Skip to content</a>
   {% include nav.html %}
-  <main id="main" class="container{% if page.wide %} container-wide{% endif %}">
+  <main id="main" class="container">
     {% unless page.hide_title %}
     <header class="page-header">
       <h1>{{ page.title }}</h1>

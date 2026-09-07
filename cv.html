@@ -2,20 +2,33 @@
 title: Curriculum Vitae
 slug: cv
 permalink: /cv/
+description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics at the University of Oklahoma: education, publications, talks, awards, service, teaching, and students.
 ---
 {% assign cv = site.data.cv %}
 {% assign pubs = site.data.publications %}
+<div class="print-only"><strong>{{ site.author.name }}</strong>, {{ site.author.title }}, {{ site.author.department }}, {{ site.author.university }}. {{ site.author.email }}. {{ site.url }}/cv/</div>
 <div class="cv-actions">
   <a class="btn btn-primary" href="{{ site.author.cv_pdf | relative_url }}">Download PDF ({{ site.author.cv_pdf_date }})</a>
   <button class="btn" type="button" onclick="window.print()">Print this page</button>
 </div>
+<ul class="toc">
+  <li><a href="#education">Education</a></li>
+  <li><a href="#employment">Employment</a></li>
+  <li><a href="#publications">Publications</a></li>
+  <li><a href="#manuscripts">Manuscripts</a></li>
+  <li><a href="#talks">Talks</a></li>
+  <li><a href="#awards">Awards</a></li>
+  <li><a href="#service">Service</a></li>
+  <li><a href="#teaching">Teaching</a></li>
+  <li><a href="#students">Students</a></li>
+</ul>
 
-<h2>Education</h2>
+<h2 id="education">Education</h2>
 {% for e in cv.education %}
 <div class="cv-row"><div class="what"><strong>{{ e.degree }}</strong>, {{ e.school }}{% if e.detail %}<span class="sub">{{ e.detail }}</span>{% endif %}</div><div class="when">{{ e.when }}</div></div>
 {% endfor %}
 
-<h2>Employment</h2>
+<h2 id="employment">Employment</h2>
 {% for e in cv.employment %}
 <div class="cv-row"><div class="what"><strong>{{ e.title }}</strong><span class="sub">{{ e.org }}</span></div><div class="when">{{ e.when }}</div></div>
 {% endfor %}
@@ -26,8 +39,10 @@ permalink: /cv/
 {% assign labor = pubs | where: "status", "published" | where: "area", "labor" | sort: "year" | reverse %}
 {% assign metrics = pubs | where: "status", "published" | where: "area", "econometrics" | sort: "year" | reverse %}
 {% assign health = pubs | where: "status", "published" | where: "area", "health" | sort: "year" | reverse %}
-<h2>Refereed publications ({{ pubs | where: "status", "published" | size }})</h2>
-<p class="small muted">Author order as published. Full details, abstracts, and PDFs are on the <a href="{{ '/research/' | relative_url }}">Research</a> page.</p>
+{% assign commentary = pubs | where: "status", "commentary" %}
+{% assign nref = pubs | where: "status", "published" | size %}
+<h2 id="publications">Publications ({{ nref | plus: commentary.size }})</h2>
+<p class="small muted">{{ nref }} refereed articles and {{ commentary | size }} editor reviewed commentary. Author order as published. Full details, abstracts, and PDFs are on the <a href="{{ '/research/' | relative_url }}">Research</a> page.</p>
 
 <h3>Labor and development economics</h3>
 <ol class="numbered">
@@ -48,7 +63,14 @@ permalink: /cv/
 {% endfor %}
 </ol>
 
-<h2>Manuscripts under review or revision</h2>
+{% assign start4 = start3 | plus: health.size %}
+<h3>Commentary</h3>
+<ol class="numbered" start="{{ start4 }}">
+{% for p in commentary %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}.{% if p.note %} <span class="muted small">{{ p.note }}</span>{% endif %}</li>
+{% endfor %}
+</ol>
+
+<h2 id="manuscripts">Manuscripts under review or revision</h2>
 {% assign rr = pubs | where: "status", "rr" %}
 {% assign rejres = pubs | where: "status", "reject_resubmit" %}
 {% assign review = pubs | where: "status", "under_review" %}
@@ -66,12 +88,12 @@ permalink: /cv/
 {% assign progress = pubs | where: "status", "in_progress" %}
 <ol class="numbered">{% for p in progress %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
 
-<h2>Invited talks and conference presentations</h2>
+<h2 id="talks">Invited talks and conference presentations</h2>
 <ul class="year-list">
 {% for t in cv.talks %}<li><span class="yr">{{ t.year }}</span><span>{{ t.venues }}</span></li>{% endfor %}
 </ul>
 
-<h2>Awards and honors</h2>
+<h2 id="awards">Awards and honors</h2>
 <ul class="year-list">
 {% for a in cv.awards %}<li><span class="yr">{{ a.year }}</span><span>{{ a.text }}</span></li>{% endfor %}
 </ul>
@@ -85,12 +107,12 @@ permalink: /cv/
 <p>{{ cv.refereeing.summary }}</p>
 <p class="small">{% for j in cv.refereeing.journals %}<em>{{ j.name }}</em>{% if j.n > 1 %} ({{ j.n }}){% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}.</p>
 
-<h2>Departmental and university service</h2>
+<h2 id="service">Departmental and university service</h2>
 {% for s in cv.service %}
 <div class="cv-row"><div class="what">{{ s.text }}{% if s.detail %}<span class="sub">{{ s.detail }}</span>{% endif %}</div><div class="when">{{ s.when }}</div></div>
 {% endfor %}
 
-<h2>Teaching</h2>
+<h2 id="teaching">Teaching</h2>
 {% for group in site.data.teaching %}
 <h3>{{ group.level }}</h3>
 {% for c in group.courses %}
@@ -99,7 +121,7 @@ permalink: /cv/
 {% endfor %}
 <div class="cv-row"><div class="what">Labor Economics, Syracuse University</div><div class="when">Summer 2012</div></div>
 
-<h2>Doctoral students</h2>
+<h2 id="students">Doctoral students</h2>
 <h3>Chair or co-chair</h3>
 {% for s in site.data.students.advisees %}
 <div class="cv-row"><div class="what"><strong>{{ s.name }}</strong>, {{ s.field }} ({{ s.role }})<span class="sub">{{ s.placement }}</span></div><div class="when">{{ s.years }}</div></div>

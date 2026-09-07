@@ -17,8 +17,8 @@ permalink: /news/feed.xml
     <title>{{ n.text | markdownify | strip_html | strip | truncatewords: 16 | xml_escape }}</title>
     <description>{{ n.text | markdownify | xml_escape }}</description>
     <pubDate>{{ n.date | date_to_rfc822 }}</pubDate>
-    <guid isPermaLink="false">news-{{ n.date | date: '%Y-%m-%d' }}-{{ forloop.index }}</guid>
-    <link>{{ '/news/' | absolute_url }}</link>
+    <guid isPermaLink="true">{{ '/news/' | absolute_url }}#n-{{ n.date | date: '%Y%m%d' }}-{{ n.text | slugify | truncate: 32, "" }}</guid>
+    <link>{{ '/news/' | absolute_url }}#n-{{ n.date | date: '%Y%m%d' }}-{{ n.text | slugify | truncate: 32, "" }}</link>
   </item>
   {% endfor %}
 </channel>

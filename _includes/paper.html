@@ -1,16 +1,21 @@
 {% assign p = include.paper %}
 {% assign unpublished = false %}
 {% if p.status == "rr" or p.status == "reject_resubmit" or p.status == "under_review" or p.status == "working" or p.status == "in_progress" %}{% assign unpublished = true %}{% endif %}
-<article class="paper" id="{{ p.id }}" data-area="{{ p.area }}" data-status="{{ p.status }}">
+<article class="paper" id="{{ p.id }}" data-area="{{ p.area }}" data-status="{{ p.status }}" data-search="{{ p.title | escape }} {{ p.authors | join: ' ' | escape }} {{ p.journal | escape }} {{ p.year }}">
   <h3 class="paper-title">
     {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% elsif p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  </h3>
+  {% if p.status == "forthcoming" or p.status == "rr" or p.status == "reject_resubmit" or p.status == "under_review" or p.status == "working" or p.status == "commentary" or p.citations %}
+  <p class="paper-badges">
     {% if p.status == "forthcoming" %}<span class="badge">Forthcoming</span>{% endif %}
     {% if p.status == "rr" %}<span class="badge">Revise and resubmit</span>{% endif %}
     {% if p.status == "reject_resubmit" %}<span class="badge">Reject and resubmit</span>{% endif %}
     {% if p.status == "under_review" %}<span class="badge">Under review</span>{% endif %}
     {% if p.status == "working" %}<span class="badge">Working paper</span>{% endif %}
+    {% if p.status == "commentary" %}<span class="badge">Commentary</span>{% endif %}
     {% if p.citations %}<span class="badge badge-cite" title="Google Scholar citations, {{ site.metrics.as_of }}">{{ p.citations }} citations</span>{% endif %}
-  </h3>
+  </p>
+  {% endif %}
   {% if unpublished %}
     {% assign coauthors = "" %}{% assign n = 0 %}
     {% for a in p.authors %}{% unless a == site.author.name %}{% assign n = n | plus: 1 %}{% if n > 1 %}{% assign coauthors = coauthors | append: ", " %}{% endif %}{% assign coauthors = coauthors | append: a %}{% endunless %}{% endfor %}
@@ -28,8 +33,9 @@
     {% if p.doi %}<a class="btn btn-sm" href="https://doi.org/{{ p.doi }}">DOI</a>{% elsif p.url %}<a class="btn btn-sm" href="{{ p.url }}">Publisher</a>{% endif %}
     {% if p.abstract %}<button class="btn btn-sm" type="button" data-panel-toggle="abs-{{ p.id }}" aria-expanded="false" aria-controls="abs-{{ p.id }}">Abstract</button>{% endif %}
     {% if p.bibtex %}<button class="btn btn-sm" type="button" data-panel-toggle="bib-{{ p.id }}" aria-expanded="false" aria-controls="bib-{{ p.id }}">BibTeX</button>{% endif %}
+    <button class="btn btn-sm btn-link" type="button" data-copy-text="{{ '/research/' | absolute_url }}#{{ p.id }}" data-copy-label="Link" title="Copy a link to this paper">Link</button>
   </div>
   {% if p.abstract %}<div class="paper-panel" id="abs-{{ p.id }}"><p>{{ p.abstract | strip }}</p></div>{% endif %}
-  {% if p.bibtex %}<div class="paper-panel" id="bib-{{ p.id }}"><div class="panel-actions"><button class="btn btn-sm" type="button" data-copy="bibsrc-{{ p.id }}">Copy</button></div><pre id="bibsrc-{{ p.id }}">{{ p.bibtex | strip }}</pre></div>{% endif %}
+  {% if p.bibtex %}<div class="paper-panel" id="bib-{{ p.id }}"><div class="panel-actions"><button class="btn btn-sm" type="button" data-copy="bibsrc-{{ p.id }}" data-copy-label="BibTeX">Copy</button></div><pre id="bibsrc-{{ p.id }}">{{ p.bibtex | strip }}</pre></div>{% endif %}
   {% endif %}
 </article>

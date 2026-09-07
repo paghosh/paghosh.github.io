@@ -1,7 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#7a1f1f">
+<meta name="theme-color" content="#7a1f1f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15161a" media="(prefers-color-scheme: dark)">
 <script>
   (function () {
     try {
@@ -12,16 +13,15 @@
     } catch (e) {}
   })();
 </script>
+{% if page.url == "/404.html" %}<meta name="robots" content="noindex">{% endif %}
 {% seo title=false %}
 <title>{% if page.title and page.url != "/" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}, {{ site.tagline }}{% endif %}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/inter-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ '/assets/img/headshot_small.jpg' | relative_url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} news" href="{{ '/news/feed.xml' | absolute_url }}">
-<meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

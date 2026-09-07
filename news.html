@@ -3,11 +3,12 @@ title: News
 slug: news
 subtitle: Publications, presentations, awards, and student placements.
 permalink: /news/
+description: News from Pallab Ghosh, University of Oklahoma: new publications, presentations, awards, and student placements.
 ---
 <p class="small muted"><a href="{{ '/news/feed.xml' | relative_url }}">Subscribe by RSS</a></p>
 <ul class="news-list news-archive">
 {% assign news = site.data.news | sort: "date" | reverse %}
 {% for n in news %}
-<li><time datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: "%B %Y" }}</time><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+<li id="n-{{ n.date | date: '%Y%m%d' }}-{{ n.text | slugify | truncate: 32, "" }}"><time datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: "%B %Y" }}</time><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
 {% endfor %}
 </ul>
