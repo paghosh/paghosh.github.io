@@ -36,9 +36,9 @@ description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics 
 <h2>Research interests</h2>
 <p>Econometrics, labor economics, health economics, and development economics.</p>
 
-{% assign labor = pubs | where: "status", "published" | where: "area", "labor" | sort: "year" | reverse %}
-{% assign metrics = pubs | where: "status", "published" | where: "area", "econometrics" | sort: "year" | reverse %}
-{% assign health = pubs | where: "status", "published" | where: "area", "health" | sort: "year" | reverse %}
+{% assign labor = pubs | where: "status", "published" | where: "area", "labor" %}
+{% assign metrics = pubs | where: "status", "published" | where: "area", "econometrics" %}
+{% assign health = pubs | where: "status", "published" | where: "area", "health" %}
 {% assign commentary = pubs | where: "status", "commentary" %}
 {% assign nref = pubs | where: "status", "published" | size %}
 <h2 id="publications">Publications ({{ nref | plus: commentary.size }})</h2>

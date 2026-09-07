@@ -49,7 +49,9 @@ def pub_item(p):
         bits.append(v)
     if p.get("pages"):
         bits.append(tex(p["pages"]).replace("-", "--"))
-    line = r"\item %s. %s. %s." % (authors_line(p), tex(p["title"]), ", ".join(b for b in bits if b))
+    title = tex(p["title"])
+    sep = "" if title.endswith(("?", "!")) else "."
+    line = r"\item %s. %s%s %s." % (authors_line(p), title, sep, ", ".join(b for b in bits if b))
     if p.get("doi"):
         line += r" \href{https://doi.org/%s}{doi:%s}" % (p["doi"], tex(p["doi"]))
     if p.get("note"):
@@ -58,8 +60,9 @@ def pub_item(p):
 
 
 published = [p for p in pubs if p["status"] in ("published", "forthcoming")]
+commentary = [p for p in pubs if p["status"] == "commentary"]
 by_area = {"labor": [], "econometrics": [], "health": []}
-for p in sorted(published, key=lambda x: -int(x["year"])):
+for p in published:  # file order: newest first within each area, same as the web page
     by_area[p["area"]].append(p)
 area_names = {"labor": "Labor and development economics", "econometrics": "Econometrics", "health": "Health economics and policy"}
 
@@ -113,13 +116,20 @@ for e in cv["employment"]:
 A(r"\section{Research interests}")
 A("Econometrics, labor economics, health economics, and development economics.")
 
-A(r"\section{Refereed publications (%d)}" % len(published))
-A(r"{\small Author lists are given as published, in published order.}")
+A(r"\section{Publications (%d)}" % (len(published) + len(commentary)))
+A(r"{\small %d refereed articles and %d editor reviewed commentary. Author lists are given as published, in published order.}\par" % (len(published), len(commentary)))
+counter = 0
 for key in ("labor", "econometrics", "health"):
     A(r"\subsection{%s}" % area_names[key])
-    A(r"\begin{enumerate}")
+    A(r"\begin{enumerate}[start=%d]" % (counter + 1))
     for p in by_area[key]:
-        A(pub_item(p))
+        A(pub_item(p)); counter += 1
+    A(r"\end{enumerate}")
+if commentary:
+    A(r"\subsection{Commentary}")
+    A(r"\begin{enumerate}[start=%d]" % (counter + 1))
+    for p in commentary:
+        A(pub_item(p)); counter += 1
     A(r"\end{enumerate}")
 
 A(r"\section{Manuscripts under review, in revision, and in progress}")
@@ -152,7 +162,7 @@ for f in cv["funding"]:
 A(r"\end{itemize}")
 
 A(r"\section{Refereeing and professional service}")
-A(tex(cv["refereeing"]["summary"]))
+A(tex(cv["refereeing"]["summary"]) + r"\par")
 A(r"{\small " + "; ".join(r"\emph{%s}%s" % (tex(j["name"]), (" (%d)" % j["n"]) if j["n"] > 1 else "") for j in cv["refereeing"]["journals"]) + ".}")
 
 A(r"\section{Departmental and university service}")
@@ -180,7 +190,7 @@ for s in students["committees"]:
 A(r"\end{longtable}")
 
 A(r"\section{Undergraduate honors and master's research students}")
-A(", ".join("%s (%s)" % (tex(s["name"]), tex(s["year"])) for s in students["honors"]) + ".")
+A(", ".join("%s (%s)" % (tex(s["name"]), tex(s["year"])) for s in students["honors"]) + r".\par")
 
 A(r"\vspace{1em}{\small\color{gray} Last updated %s. The current version of this CV is at \href{%s/cv/}{%s/cv/}.}" % (datetime.date.today().strftime("%B %-d, %Y"), cfg["url"], tex(cfg["url"].replace("https://", ""))))
 A(r"\end{document}")

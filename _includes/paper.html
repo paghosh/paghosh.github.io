@@ -35,7 +35,7 @@
     {% if p.bibtex %}<button class="btn btn-sm" type="button" data-panel-toggle="bib-{{ p.id }}" aria-expanded="false" aria-controls="bib-{{ p.id }}">BibTeX</button>{% endif %}
     <button class="btn btn-sm btn-link" type="button" data-copy-text="{{ '/research/' | absolute_url }}#{{ p.id }}" data-copy-label="Link" title="Copy a link to this paper">Link</button>
   </div>
-  {% if p.abstract %}<div class="paper-panel" id="abs-{{ p.id }}"><p>{{ p.abstract | strip }}</p></div>{% endif %}
+  {% if p.abstract %}<div class="paper-panel" id="abs-{{ p.id }}"><p>{{ p.abstract | strip | escape }}</p></div>{% endif %}
   {% if p.bibtex %}<div class="paper-panel" id="bib-{{ p.id }}"><div class="panel-actions"><button class="btn btn-sm" type="button" data-copy="bibsrc-{{ p.id }}" data-copy-label="BibTeX">Copy</button></div><pre id="bibsrc-{{ p.id }}">{{ p.bibtex | strip }}</pre></div>{% endif %}
   {% endif %}
 </article>

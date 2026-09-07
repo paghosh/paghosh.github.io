@@ -8,7 +8,7 @@ permalink: /research/
 {% assign pubs = site.data.publications %}
 {% assign pub_only = pubs | where: "status", "published" %}
 {% assign forth = pubs | where: "status", "forthcoming" %}
-{% assign published = pub_only | concat: forth | sort: "year" | reverse %}
+{% assign published = forth | concat: pub_only %}
 {% assign commentary = pubs | where: "status", "commentary" %}
 {% assign rr = pubs | where: "status", "rr" %}
 {% assign rejres = pubs | where: "status", "reject_resubmit" %}

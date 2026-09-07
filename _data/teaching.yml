@@ -4,11 +4,11 @@
     - code: ECON 5243
       title: Econometrics II
       when: Fall 2014 to Spring 2021; Spring 2026
-      description: "Second semester of the doctoral econometrics sequence: panel data, instrumental variables, limited dependent variables, quantile regression, and program evaluation."
+      description: "Second course of the doctoral econometrics sequence."
     - code: ECON 6433
       title: Labor Economics I
       when: Fall 2020, 2022, 2024, 2026
-      description: "Doctoral field course in labor economics: labor supply and demand, human capital, wage structure and inequality, discrimination, and family economics."
+      description: "First doctoral field course in labor economics."
     - code: ECON 6970
       title: Labor Economics II
       when: Spring 2019
@@ -22,11 +22,11 @@
     - code: ECON 5213
       title: Advanced Econometrics (Online MA in Econometrics)
       when: Spring 2025, 2026
-      description: "Regression methods and their applications for the Online MA in Econometrics, taught in Python."
+      description: "Regression methods and applications for the Online MA in Econometrics."
     - code: ECON 5083
       title: Applied Labor Economics (Online MA in Econometrics)
       when: Summer 2026
-      description: "Labor economics for master's students, from wage determination and inequality to policy evaluation, with Python study guides."
+      description: "Labor economics for the Online MA in Econometrics."
     - code: DSA 5031
       title: Econometrics for Data Science (Online MS in Data Science and Analytics)
       when: Summer 2021, 2023, 2025 (two sections), 2026
@@ -44,7 +44,7 @@
     - code: ECON 3513
       title: Labor Problems
       when: Spring 2024; Fall 2025; Fall 2026
-      description: "Labor economics for undergraduates: employment, wages, unions, inequality, and the labor market effects of technology."
+      description: "Labor economics for undergraduates."
     - code: ECON 3113
       title: Intermediate Microeconomics
       when: Fall and Spring, 2015 to 2020

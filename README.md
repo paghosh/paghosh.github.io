@@ -38,7 +38,7 @@ Change `status: under_review` to `status: published`, add `journal`, `year`, `do
 
 ### Status values
 
-`published`, `forthcoming`, `rr` (revise and resubmit), `reject_resubmit`, `under_review`, `working`, `in_progress`. Unpublished papers deliberately carry no journal name, and the site shows only "with coauthor names" for them rather than an author order.
+`published`, `forthcoming`, `commentary` (editor reviewed, counted among publications but not as refereed), `rr` (revise and resubmit), `reject_resubmit`, `under_review`, `working`, `in_progress`. Unpublished papers deliberately carry no journal name, and the site shows only "with coauthor names" for them rather than an author order.
 
 ## Local preview (optional)
 

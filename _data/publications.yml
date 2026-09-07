@@ -259,8 +259,8 @@
     }
 
 - id: ghosh2016korea
-  title: "Decomposition of the Changes in Korean Wage Inequality During the Period 1998-2007"
-  authors: ["Pallab Ghosh", "JaeYoon Lee"]
+  title: "Decomposition of Changes in Korean Wage Inequality, 1998-2007"
+  authors: ["Pallab Ghosh", "Jae Yoon Lee"]
   journal: "Journal of Labor Research"
   year: 2016
   volume: "37"
@@ -285,8 +285,8 @@
     recommendations to address the wage inequality issue in Korea.
   bibtex: |
     @article{ghosh2016korea,
-      author  = {Ghosh, Pallab and Lee, JaeYoon},
-      title   = {Decomposition of the Changes in Korean Wage Inequality During the Period 1998--2007},
+      author  = {Ghosh, Pallab and Lee, Jae Yoon},
+      title   = {Decomposition of Changes in Korean Wage Inequality, 1998--2007},
       journal = {Journal of Labor Research},
       year    = {2016},
       volume  = {37},
@@ -296,7 +296,7 @@
     }
 
 - id: ghosh2014humancapital
-  title: "The Contribution of Human Capital Variables to Changes in Wage Distribution Function"
+  title: "The Contribution of Human Capital Variables to Changes in the Wage Distribution Function"
   authors: ["Pallab Ghosh"]
   journal: "Labour Economics"
   year: 2014
@@ -324,7 +324,7 @@
   bibtex: |
     @article{ghosh2014humancapital,
       author  = {Ghosh, Pallab},
-      title   = {The Contribution of Human Capital Variables to Changes in Wage Distribution Function},
+      title   = {The Contribution of Human Capital Variables to Changes in the Wage Distribution Function},
       journal = {Labour Economics},
       year    = {2014},
       volume  = {28},
@@ -563,7 +563,7 @@
 
 - id: zhao2025advice
   title: "Power of Public Health Advice: Effectiveness and Spillover Effects of Federal Vaccine Recommendations"
-  authors: ["Junying Zhao", "Ahmed El Fatmaoui", "Mahla Shourian", "B. Lor", "Pallab Ghosh"]
+  authors: ["Junying Zhao", "Ahmed El Fatmaoui", "Mahla Shourian", "Bethanie Lor", "Pallab Ghosh"]
   journal: "Public Health in Practice"
   year: 2025
   volume: "10"
@@ -598,7 +598,7 @@
     COVID-19, RSV, and new vaccines.
   bibtex: |
     @article{zhao2025advice,
-      author  = {Zhao, Junying and El Fatmaoui, Ahmed and Shourian, Mahla and Lor, B. and Ghosh, Pallab},
+      author  = {Zhao, Junying and El Fatmaoui, Ahmed and Shourian, Mahla and Lor, Bethanie and Ghosh, Pallab},
       title   = {Power of Public Health Advice: Effectiveness and Spillover Effects of Federal Vaccine Recommendations},
       journal = {Public Health in Practice},
       year    = {2025},
@@ -630,7 +630,7 @@
     }
 
 - id: zhao2025medicaid
-  title: "Did the Medicaid expansion improve immunization among pregnant women?"
+  title: "Did the Medicaid expansion improve immunization among U.S. pregnant women?"
   authors: ["Junying Zhao", "Rashmi Jaggad", "Ahmed El Fatmaoui", "Pallab Ghosh"]
   journal: "Preventive Medicine Reports"
   year: 2025
@@ -667,7 +667,7 @@
   bibtex: |
     @article{zhao2025medicaid,
       author  = {Zhao, Junying and Jaggad, Rashmi and El Fatmaoui, Ahmed and Ghosh, Pallab},
-      title   = {Did the Medicaid expansion improve immunization among pregnant women?},
+      title   = {Did the Medicaid expansion improve immunization among U.S. pregnant women?},
       journal = {Preventive Medicine Reports},
       year    = {2025},
       volume  = {58},
