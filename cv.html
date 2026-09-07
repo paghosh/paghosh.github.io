@@ -2,7 +2,7 @@
 title: Curriculum Vitae
 slug: cv
 permalink: /cv/
-description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics at the University of Oklahoma: education, publications, talks, awards, service, teaching, and students.
+description: "Curriculum vitae of Pallab Ghosh, Associate Professor of Economics at the University of Oklahoma: education, publications, talks, awards, service, teaching, and students."
 ---
 {% assign cv = site.data.cv %}
 {% assign pubs = site.data.publications %}
@@ -16,11 +16,15 @@ description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics 
   <li><a href="#employment">Employment</a></li>
   <li><a href="#publications">Publications</a></li>
   <li><a href="#manuscripts">Manuscripts</a></li>
+  <li><a href="#progress">Work in progress</a></li>
   <li><a href="#talks">Talks</a></li>
   <li><a href="#awards">Awards</a></li>
+  <li><a href="#funding">Funding</a></li>
+  <li><a href="#refereeing">Refereeing</a></li>
   <li><a href="#service">Service</a></li>
   <li><a href="#teaching">Teaching</a></li>
   <li><a href="#students">Students</a></li>
+  <li><a href="#honors">Honors students</a></li>
 </ul>
 
 <h2 id="education">Education</h2>
@@ -84,7 +88,7 @@ description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics 
 <h3>Working papers</h3>
 <ol class="numbered">{% for p in working %}<li>{{ p.title }}</li>{% endfor %}</ol>
 
-<h2>Work in progress</h2>
+<h2 id="progress">Work in progress</h2>
 {% assign progress = pubs | where: "status", "in_progress" %}
 <ol class="numbered">{% for p in progress %}<li>{{ p.title }}{% assign co = p.authors | size %}{% if co > 1 %} (with {% for a in p.authors %}{% unless a == site.author.name %}{{ a }}{% unless forloop.last %}, {% endunless %}{% endunless %}{% endfor %}){% endif %}</li>{% endfor %}</ol>
 
@@ -98,12 +102,12 @@ description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics 
 {% for a in cv.awards %}<li><span class="yr">{{ a.year }}</span><span>{{ a.text }}</span></li>{% endfor %}
 </ul>
 
-<h2>Funding and leave</h2>
+<h2 id="funding">Funding and leave</h2>
 <ul>
 {% for f in cv.funding %}<li>{{ f.text }}</li>{% endfor %}
 </ul>
 
-<h2>Refereeing and professional service</h2>
+<h2 id="refereeing">Refereeing and professional service</h2>
 <p>{{ cv.refereeing.summary }}</p>
 <p class="small">{% for j in cv.refereeing.journals %}<em>{{ j.name }}</em>{% if j.n > 1 %} ({{ j.n }}){% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}.</p>
 
@@ -132,5 +136,5 @@ description: Curriculum vitae of Pallab Ghosh, Associate Professor of Economics 
 <tbody>{% for s in site.data.students.committees %}<tr><td>{{ s.name }}</td><td>{{ s.field }}</td><td>{{ s.year }}</td></tr>{% endfor %}</tbody>
 </table></div>
 
-<h2>Undergraduate honors and master's research students</h2>
+<h2 id="honors">Undergraduate honors and master's research students</h2>
 <p>{% for s in site.data.students.honors %}{{ s.name }} ({{ s.year }}){% unless forloop.last %}, {% endunless %}{% endfor %}.</p>

@@ -24,7 +24,8 @@ All content lives in plain text files under `_data/`. You never need to touch HT
 1. Copy the PDF to `assets/papers/<id>.pdf`, where `<id>` is a short slug such as `ghosh2027wages`.
 2. Add a block to `_data/publications.yml` following the existing entries. Required fields: `id`, `title`, `authors` (published order), `journal`, `year`, `area` (`labor`, `econometrics`, or `health`), `status: published`. Optional: `volume`, `issue`, `pages`, `doi`, `pdf`, `abstract`, `bibtex`, `featured`, `citations`, `note`.
 3. Add a news line in `_data/news.yml`.
-4. Commit and push:
+4. Run `python3 scripts/check_front_matter.py` and `python3 scripts/build_cv.py`, then update `updated:` in `_config.yml`.
+5. Commit and push:
 
 ```bash
 git add -A
@@ -61,4 +62,5 @@ Then open http://localhost:4000.
 - `index.html`, `research.html`, `cv.html`, `teaching.html`, `students.html`, `ma-econometrics.md`, `news.html`, `books.html`, `contact.html`, `404.html`
 - `news/feed.xml` and `feed.xml` RSS feed generated from `_data/news.yml`
 - `scripts/build_cv.py` regenerates the CV PDF from the data files
+- `scripts/check_front_matter.py` verifies that every page's front matter and every data file parse; run it before committing (a colon inside an unquoted `description:` silently blanks a page's title)
 - `cv_source/CV_Pallab_Ghosh.tex` the generated LaTeX source of the CV PDF (do not edit by hand)

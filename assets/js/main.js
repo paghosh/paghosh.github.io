@@ -5,9 +5,11 @@
   var root = document.documentElement;
   var toggle = document.querySelector('.theme-toggle');
   if (toggle) {
+    toggle.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
     toggle.addEventListener('click', function () {
       var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
+      toggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
   }

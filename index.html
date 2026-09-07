@@ -3,7 +3,7 @@ title: Pallab Ghosh
 slug: home
 hide_title: true
 permalink: /
-description: Pallab Ghosh is an Associate Professor of Economics at the University of Oklahoma and Director of the Online MA in Econometrics. Research in econometrics, labor, health, and development economics.
+description: "Pallab Ghosh is an Associate Professor of Economics at the University of Oklahoma and Director of the Online MA in Econometrics. Research in econometrics, labor, health, and development economics."
 ---
 {% assign published = site.data.publications | where: "status", "published" %}
 {% assign commentary = site.data.publications | where: "status", "commentary" %}
@@ -35,10 +35,10 @@ description: Pallab Ghosh is an Associate Professor of Economics at the Universi
 </section>
 
 <div class="glance" aria-label="At a glance">
-  <div class="metric"><div class="num">{{ npubs }}</div><div class="lbl"><a href="{{ '/research/' | relative_url }}">Publications</a>, {{ published | size }} refereed</div></div>
-  <div class="metric"><div class="num">{{ site.metrics.citations }}</div><div class="lbl"><a href="{{ site.links.scholar }}">Google Scholar citations</a>, h-index {{ site.metrics.h_index }}</div></div>
-  <div class="metric"><div class="num">{{ site.data.students.advisees | size }}</div><div class="lbl"><a href="{{ '/students/' | relative_url }}">PhD dissertations chaired or co-chaired</a>, {{ site.data.students.committees | size }} committees</div></div>
-  <div class="metric"><div class="num">2026</div><div class="lbl"><a href="{{ '/teaching/' | relative_url }}">Merrick Foundation Teaching Award</a></div></div>
+  <a class="metric" href="{{ '/research/' | relative_url }}"><div class="num">{{ npubs }}</div><div class="lbl">Publications, {{ published | size }} refereed</div></a>
+  <a class="metric" href="{{ site.links.scholar }}"><div class="num">{{ site.metrics.citations }}</div><div class="lbl">Google Scholar citations, h-index {{ site.metrics.h_index }}, i10-index {{ site.metrics.i10_index }}, as of {{ site.metrics.as_of }}</div></a>
+  <a class="metric" href="{{ '/students/' | relative_url }}"><div class="num">{{ site.data.students.advisees | size }}</div><div class="lbl">PhD dissertations chaired or co-chaired, {{ site.data.students.committees | size }} committees</div></a>
+  <a class="metric" href="{{ '/teaching/' | relative_url }}"><div class="num">2026</div><div class="lbl">Merrick Foundation Teaching Award</div></a>
 </div>
 
 <div class="two-col">
@@ -53,17 +53,6 @@ description: Pallab Ghosh is an Associate Professor of Economics at the Universi
     {% endfor %}
   </div>
   <aside>
-    <div class="section-head">
-      <h2>Citations</h2>
-      <a href="{{ site.links.scholar }}">Google Scholar</a>
-    </div>
-    <div class="metrics">
-      <div class="metric"><div class="num">{{ site.metrics.citations }}</div><div class="lbl">Citations</div></div>
-      <div class="metric"><div class="num">{{ site.metrics.h_index }}</div><div class="lbl">h-index</div></div>
-      <div class="metric"><div class="num">{{ site.metrics.i10_index }}</div><div class="lbl">i10-index</div></div>
-    </div>
-    <p class="metrics-note">As of {{ site.metrics.as_of }}.</p>
-
     <div class="section-head">
       <h2>News</h2>
       <a href="{{ '/news/' | relative_url }}">Archive</a>

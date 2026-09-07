@@ -1,0 +1,10 @@
+---
+layout: null
+permalink: /research/ghosh.bib.txt
+---
+% BibTeX entries for the publications of Pallab Ghosh, University of Oklahoma.
+% Generated from https://paghosh.github.io/research/ on {{ site.time | date: "%Y-%m-%d" }}.
+{% assign pubs = site.data.publications | where_exp: "p", "p.bibtex" | sort: "year" | reverse %}
+{% for p in pubs %}
+{{ p.bibtex | strip }}
+{% endfor %}

@@ -33,6 +33,9 @@ profiles:
   github: paghosh
   researchgate: Pallab-Ghosh
 
+# Date shown in the footer. Update when the content changes.
+updated: September 7, 2026
+
 # Google Scholar metrics. Update these numbers by hand when they change.
 metrics:
   citations: 199
@@ -95,3 +98,5 @@ exclude:
 defaults:
   - scope: { path: "" }
     values: { layout: default, image: /assets/img/og-image.jpg }
+  - scope: { path: "assets" }
+    values: { sitemap: false }
