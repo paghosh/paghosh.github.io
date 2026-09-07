@@ -1,6 +1,8 @@
 # News feed. Newest first. Add one block per event.
 # date: YYYY-MM-DD   text: plain sentence (Markdown links allowed). The site displays month and year only, so use the first of the month when the exact day is not known.
 
+- date: 2026-09-01
+  text: "I am co-chairing the dissertation of Damilola Usman, a third year PhD student, with Firat Demir as chair."
 - date: 2026-08-25
   text: "Ramesh Dulal's paper on Nepal's 2015 earthquake and infant death, coauthored with me, is now under review."
 - date: 2026-07-15
