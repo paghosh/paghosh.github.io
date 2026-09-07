@@ -4,13 +4,14 @@
 <meta name="theme-color" content="#7a1f1f" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15161a" media="(prefers-color-scheme: dark)">
 <script>
+  /* Theme: "auto" follows the visitor's local clock (light 7 am to 7 pm, dark otherwise); "light" and "dark" are fixed choices. */
   (function () {
-    try {
-      var stored = localStorage.getItem('theme');
-      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var theme = stored || (prefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
-    } catch (e) {}
+    var mode = 'auto';
+    try { mode = localStorage.getItem('theme-mode') || 'auto'; } catch (e) {}
+    var h = new Date().getHours();
+    var theme = mode === 'auto' ? ((h >= 7 && h < 19) ? 'light' : 'dark') : mode;
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-theme-mode', mode);
   })();
 </script>
 {% if page.url == "/404.html" %}<meta name="robots" content="noindex">{% endif %}

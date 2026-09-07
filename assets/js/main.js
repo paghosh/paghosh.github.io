@@ -1,18 +1,50 @@
 (function () {
   'use strict';
 
-  // Theme toggle
+  // Toast
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  document.body.appendChild(toast);
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(showToast.t);
+    showToast.t = setTimeout(function () { toast.classList.remove('show'); }, 1800);
+  }
+
+  // Theme: auto (light 7 am to 7 pm by the visitor's clock, dark otherwise), light, or dark.
   var root = document.documentElement;
   var toggle = document.querySelector('.theme-toggle');
+  var labels = {
+    auto: 'Theme: automatic (light by day, dark by night). Click for light.',
+    light: 'Theme: light. Click for dark.',
+    dark: 'Theme: dark. Click for automatic.'
+  };
+  function themeForMode(mode) {
+    if (mode !== 'auto') return mode;
+    var h = new Date().getHours();
+    return (h >= 7 && h < 19) ? 'light' : 'dark';
+  }
+  function applyMode(mode) {
+    root.setAttribute('data-theme-mode', mode);
+    root.setAttribute('data-theme', themeForMode(mode));
+    if (toggle) { toggle.setAttribute('aria-label', labels[mode]); toggle.setAttribute('title', labels[mode]); }
+  }
+  var mode = 'auto';
+  try { mode = localStorage.getItem('theme-mode') || 'auto'; } catch (e) {}
+  if (!labels[mode]) mode = 'auto';
+  applyMode(mode);
   if (toggle) {
-    toggle.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
     toggle.addEventListener('click', function () {
-      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      toggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
-      try { localStorage.setItem('theme', next); } catch (e) {}
+      mode = mode === 'auto' ? 'light' : mode === 'light' ? 'dark' : 'auto';
+      applyMode(mode);
+      try { localStorage.setItem('theme-mode', mode); } catch (e) {}
+      showToast(mode === 'auto' ? 'Automatic: light by day, dark by night' : (mode === 'light' ? 'Light mode' : 'Dark mode'));
     });
   }
+  // Re-check every minute so a page left open switches at 7 am and 7 pm.
+  setInterval(function () { if (mode === 'auto') applyMode('auto'); }, 60000);
 
   // Mobile nav
   var navBtn = document.querySelector('.nav-toggle');
@@ -27,18 +59,6 @@
     navBtn.addEventListener('click', function () { setNav(!nav.classList.contains('open')); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setNav(false); });
     document.addEventListener('click', function (e) { if (!e.target.closest('.site-header')) setNav(false); });
-  }
-
-  // Toast
-  var toast = document.createElement('div');
-  toast.className = 'toast';
-  toast.setAttribute('role', 'status');
-  document.body.appendChild(toast);
-  function showToast(msg) {
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(showToast.t);
-    showToast.t = setTimeout(function () { toast.classList.remove('show'); }, 1800);
   }
 
   // Abstract and BibTeX panels

@@ -58,7 +58,7 @@ Then open http://localhost:4000.
 - `_layouts/default.html` page frame
 - `_includes/` head, navigation, footer, profile icons, and the paper card used on every research list
 - `assets/css/main.css` the theme (light and dark)
-- `assets/js/main.js` theme toggle, mobile menu, abstract and BibTeX panels, research filters, book filters
+- `assets/js/main.js` theme mode (automatic by local clock, light 7 am to 7 pm, dark otherwise; the header button cycles automatic, light, dark), mobile menu, abstract and BibTeX panels, research filters, book filters
 - `index.html`, `research.html`, `cv.html`, `teaching.html`, `students.html`, `ma-econometrics.md`, `news.html`, `books.html`, `contact.html`, `404.html`
 - `news/feed.xml` and `feed.xml` RSS feed generated from `_data/news.yml`
 - `scripts/build_cv.py` regenerates the CV PDF from the data files
