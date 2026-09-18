@@ -38,47 +38,6 @@
       doi     = {10.1080/00036846.2026.2656819}
     }
 
-- id: demir2026missingwomen
-  title: "The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011-2014"
-  authors: ["Firat Demir", "Pallab Ghosh", "Zhengang Xu"]
-  journal: "Journal of Comparative Economics"
-  year: 2026
-  volume: "54"
-  issue: "1"
-  pages: "194-213"
-  doi: "10.1016/j.jce.2025.09.003"
-  pdf: "/assets/papers/demir2026missingwomen.pdf"
-  area: labor
-  status: published
-  featured: true
-  rank: 5
-  abstract: >
-    This paper examines the effects of political protests during the Egyptian revolution between 2011
-    and 2014 on "missing women" in Egypt. The term "missing women" refers to the number of women missing
-    in population because of sex-selective abortions, excess female mortality and lower survival rates
-    caused by gender discrimination, infanticide, neglect, malnutrition, domestic violence, unequal
-    healthcare access and provision, and poor treatment. We hypothesize that increased female
-    participation in these protests improved women's empowerment and helped reduce missing women. Using
-    a difference-in-differences analysis, our identification strategy is based on protest intensity
-    heterogeneity, and changes in missing women for the age group of [0-1] before and after the protests
-    across different governorates in urban and rural areas. We find convincing causal evidence that the
-    number of missing women decreased significantly in high protest intensity governorates. Based on
-    protest heterogeneity across different periods, we also show that this effect was most visible after
-    the fourth and final phase of protests. As for possible channels, we find that domestic violence
-    during pregnancy incidence fell significantly in treatment areas, while both relative vaccination
-    rate of girls aged [0-1] as well as women's empowerment increased significantly.
-  bibtex: |
-    @article{demir2026missingwomen,
-      author  = {Demir, Firat and Ghosh, Pallab and Xu, Zhengang},
-      title   = {The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011--2014},
-      journal = {Journal of Comparative Economics},
-      year    = {2026},
-      volume  = {54},
-      number  = {1},
-      pages   = {194--213},
-      doi     = {10.1016/j.jce.2025.09.003}
-    }
-
 - id: ghosh2023routine
   title: "The Puzzle of Changes in Employment and Wages in Routine Task-intensive Occupations"
   authors: ["Pallab Ghosh", "Zexuan Liu"]
