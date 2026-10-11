@@ -105,7 +105,7 @@ main.container { padding-top: 2rem; padding-bottom: 3rem; min-height: 60vh; }
 
 /* Home */
 .hero { display: grid; grid-template-columns: 240px 1fr; gap: 2.2rem; align-items: start; margin-top: .5rem; }
-.hero-photo img { border-radius: 14px; box-shadow: var(--shadow); width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.hero-photo img { border-radius: 14px; box-shadow: var(--shadow); width: 100%; aspect-ratio: 1145 / 1374; object-fit: cover; }
 .hero h1 { font-size: 2.4rem; margin-bottom: .2rem; }
 .hero .titles { color: var(--text-muted); margin-bottom: 1rem; font-size: 1.02rem; }
 .hero .titles span { display: block; }
