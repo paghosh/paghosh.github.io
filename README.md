@@ -16,7 +16,7 @@ All content lives in plain text files under `_data/`. You never need to touch HT
 | Update the reading list | `_data/books.yml` |
 | Change name, email, phone, profile IDs, citation counts | `_config.yml` |
 | Rebuild the CV PDF | run `python3 scripts/build_cv.py` (needs pdflatex and pyyaml); it regenerates `assets/cv/CV_Pallab_Ghosh.pdf` from the data files, then update `cv_pdf_date` in `_config.yml` |
-| Replace the headshot | overwrite `assets/img/headshot.jpg` (portrait, 5 by 6 proportions, at least 600 pixels wide; the box ratio is set in `assets/css/main.css` under `.hero-photo img`) |
+| Replace the headshot | overwrite `assets/img/headshot.jpg` (square, at least 600 by 600 pixels; the box ratio is set in `assets/css/main.css` under `.hero-photo img`) |
 | Rewrite the bio | `index.html`, the three paragraphs inside `<div class="bio">` |
 
 ### Adding a published paper
