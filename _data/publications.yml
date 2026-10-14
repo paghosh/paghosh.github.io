@@ -38,6 +38,47 @@
       doi     = {10.1080/00036846.2026.2656819}
     }
 
+- id: demir2026missingwomen
+  title: "The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011-2014"
+  authors: ["Firat Demir", "Pallab Ghosh", "Zhengang Xu"]
+  journal: "Journal of Comparative Economics"
+  year: 2026
+  volume: "54"
+  issue: "1"
+  pages: "194-213"
+  doi: "10.1016/j.jce.2025.09.003"
+  pdf: "/assets/papers/demir2026missingwomen.pdf"
+  area: labor
+  status: published
+  featured: true
+  rank: 5
+  abstract: >
+    This paper examines the effects of political protests during the Egyptian revolution between 2011
+    and 2014 on "missing women" in Egypt. The term "missing women" refers to the number of women missing
+    in population because of sex-selective abortions, excess female mortality and lower survival rates
+    caused by gender discrimination, infanticide, neglect, malnutrition, domestic violence, unequal
+    healthcare access and provision, and poor treatment. We hypothesize that increased female
+    participation in these protests improved women's empowerment and helped reduce missing women. Using
+    a difference-in-differences analysis, our identification strategy is based on protest intensity
+    heterogeneity, and changes in missing women for the age group of [0-1] before and after the protests
+    across different governorates in urban and rural areas. We find convincing causal evidence that the
+    number of missing women decreased significantly in high protest intensity governorates. Based on
+    protest heterogeneity across different periods, we also show that this effect was most visible after
+    the fourth and final phase of protests. As for possible channels, we find that domestic violence
+    during pregnancy incidence fell significantly in treatment areas, while both relative vaccination
+    rate of girls aged [0-1] as well as women's empowerment increased significantly.
+  bibtex: |
+    @article{demir2026missingwomen,
+      author  = {Demir, Firat and Ghosh, Pallab and Xu, Zhengang},
+      title   = {The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011--2014},
+      journal = {Journal of Comparative Economics},
+      year    = {2026},
+      volume  = {54},
+      number  = {1},
+      pages   = {194--213},
+      doi     = {10.1016/j.jce.2025.09.003}
+    }
+
 - id: ghosh2023routine
   title: "The Puzzle of Changes in Employment and Wages in Routine Task-intensive Occupations"
   authors: ["Pallab Ghosh", "Zexuan Liu"]
@@ -442,6 +483,34 @@
 # Refereed journal publications: Health Economics and Policy
 # ---------------------------------------------------------------------------
 
+- id: ghosh2026hepb
+  title: "Hepatitis B Vaccination and Neonatal Mortality in the United States"
+  authors: ["Pallab Ghosh", "Ahmed El Fatmaoui", "Junying Zhao"]
+  journal: "Applied Economics Letters"
+  year: 2026
+  area: health
+  status: forthcoming
+  featured: false
+  abstract: >
+    We estimate the plausibly causal effect of hepatitis B birth dose vaccination on neonatal mortality
+    using U.S. county-level panel data (2011-2019) and a shift-share instrument that interacts historical
+    fertility rates with national vaccine price variation. With county fixed effects and a control for
+    the historical fertility share interacted with a linear trend, a one percentage point increase in
+    birth dose coverage reduces 0-3 day mortality by 0.022 deaths per 1,000 live births, representing a
+    1.04% decline at the mean. The effect is concentrated in the first day of life and is
+    indistinguishable from zero at later infant ages, a profile consistent either with an early life
+    mechanism or with an administrative one, and we identify neither. The estimate is an unweighted
+    county average conditional on a linear fertility trend, and we report the diagnostics that qualify
+    it alongside those that support it.
+  bibtex: |
+    @article{ghosh2026hepb,
+      author  = {Ghosh, Pallab and El Fatmaoui, Ahmed and Zhao, Junying},
+      title   = {Hepatitis B Vaccination and Neonatal Mortality in the United States},
+      journal = {Applied Economics Letters},
+      year    = {2026},
+      note    = {Forthcoming}
+    }
+
 - id: kim2025vaccine
   title: "Vaccine Production and Innovation: Insights from Tort Reform and Medicare Expansion"
   authors: ["Myongjin Kim", "Firat Demir", "Ahmed El Fatmaoui", "Qi Ge", "Pallab Ghosh", "Junying Zhao"]
@@ -781,13 +850,6 @@
 # Manuscripts under revision (revise and resubmit / reject and resubmit)
 # ---------------------------------------------------------------------------
 
-- id: ghosh2026hepb
-  title: "Vaccine Hesitancy and Neonatal Mortality: The Life-Saving Power of Hepatitis B Immunization"
-  authors: ["Pallab Ghosh", "Ahmed El Fatmaoui", "Junying Zhao"]
-  area: health
-  status: rr
-  featured: false
-
 - id: ghosh2026maternalimmunization
   title: "Maternal Immunization, State Medicaid Expansion, and National ACA Interplay for Infant Mortality: A US Pooled Cross-sectional Triple-difference Study"
   authors: ["Pallab Ghosh", "Rashmi Jaggad", "Junying Zhao"]
@@ -812,14 +874,6 @@
   area: labor
   status: under_review
   featured: false
-
-- id: ghosh2026shenhav
-  title: "The Relative Wage and Marriage after 2010: A Comment on Shenhav (2021)"
-  authors: ["Pallab Ghosh", "Mahla Shourian"]
-  area: labor
-  status: under_review
-  featured: false
-  note: "Mahla Shourian is the corresponding author."
 
 - id: ghosh2026computerization
   title: "Does Computerization Affect Crime?"
@@ -852,6 +906,13 @@
 # ---------------------------------------------------------------------------
 # Working paper
 # ---------------------------------------------------------------------------
+
+- id: ghosh2026shenhav
+  title: "The Relative Wage and Marriage after 2010: A Comment on Shenhav (2021)"
+  authors: ["Pallab Ghosh", "Mahla Shourian"]
+  area: labor
+  status: working
+  featured: false
 
 - id: ghosh2026substitutability
   title: "A Study on Long-Run Substitutability Between Men and Women"

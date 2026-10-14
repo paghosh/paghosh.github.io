@@ -40,30 +40,33 @@ description: "Curriculum vitae of Pallab Ghosh, Associate Professor of Economics
 <h2>Research interests</h2>
 <p>Econometrics, labor economics, health economics, and development economics.</p>
 
-{% assign labor = pubs | where: "status", "published" | where: "area", "labor" %}
-{% assign metrics = pubs | where: "status", "published" | where: "area", "econometrics" %}
-{% assign health = pubs | where: "status", "published" | where: "area", "health" %}
+{% assign forth = pubs | where: "status", "forthcoming" %}
+{% assign refpubs = pubs | where: "status", "published" %}
+{% assign refpubs = forth | concat: refpubs %}
+{% assign labor = refpubs | where: "area", "labor" %}
+{% assign metrics = refpubs | where: "area", "econometrics" %}
+{% assign health = refpubs | where: "area", "health" %}
 {% assign commentary = pubs | where: "status", "commentary" %}
-{% assign nref = pubs | where: "status", "published" | size %}
+{% assign nref = refpubs | size %}
 <h2 id="publications">Publications ({{ nref | plus: commentary.size }})</h2>
 <p class="small muted">{{ nref }} refereed articles and {{ commentary | size }} editor reviewed commentary. Author order as published. Full details, abstracts, and PDFs are on the <a href="{{ '/research/' | relative_url }}">Research</a> page.</p>
 
 <h3>Labor and development economics</h3>
 <ol class="numbered">
-{% for p in labor %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
+{% for p in labor %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {% if p.status == "forthcoming" %}forthcoming{% else %}{{ p.year }}{% endif %}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
 {% endfor %}
 </ol>
 
 <h3>Econometrics</h3>
 <ol class="numbered" start="{{ labor | size | plus: 1 }}">
-{% for p in metrics %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
+{% for p in metrics %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {% if p.status == "forthcoming" %}forthcoming{% else %}{{ p.year }}{% endif %}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</li>
 {% endfor %}
 </ol>
 
 <h3>Health economics and policy</h3>
 {% assign start3 = labor | size | plus: 1 | plus: metrics.size %}
 <ol class="numbered" start="{{ start3 }}">
-{% for p in health %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {{ p.year }}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.{% if p.note %} <span class="muted small">{{ p.note }}</span>{% endif %}</li>
+{% for p in health %}<li>{% for a in p.authors %}{% if a == site.author.name %}<strong>{{ a }}</strong>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}. {% if p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}. <em>{{ p.journal }}</em>, {% if p.status == "forthcoming" %}forthcoming{% else %}{{ p.year }}{% endif %}{% if p.volume %}, {{ p.volume }}{% if p.issue %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.{% if p.note %} <span class="muted small">{{ p.note }}</span>{% endif %}</li>
 {% endfor %}
 </ol>
 

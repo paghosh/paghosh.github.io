@@ -1,6 +1,10 @@
 # News feed. Newest first. Add one block per event.
 # date: YYYY-MM-DD   text: plain sentence (Markdown links allowed). The site displays month and year only, so use the first of the month when the exact day is not known.
 
+- date: 2026-12-01
+  text: "Upcoming: seminar at the Indian Statistical Institute, Delhi, in December 2026."
+- date: 2026-10-12
+  text: "*Hepatitis B Vaccination and Neonatal Mortality in the United States* (with Ahmed El Fatmaoui and Junying Zhao) is accepted at *Applied Economics Letters*. [Paper](/research/#ghosh2026hepb)"
 - date: 2026-08-25
   text: "Ramesh Dulal's paper on Nepal's 2015 earthquake and infant death, coauthored with me, is now under review."
 - date: 2026-07-15
@@ -15,6 +19,8 @@
   text: "Presented at the American Economic Association Annual Meetings, January 2026."
 - date: 2025-11-22
   text: "Presented at the Southern Economic Association Annual Meetings, November 2025."
+- date: 2025-10-28
+  text: "*The Effects of Female Political Participation on Missing Women: Evidence from the Egyptian Protests of 2011-2014* (with Firat Demir and Zhengang Xu) is published in the *Journal of Comparative Economics*, 54(1). [Paper](/research/#demir2026missingwomen)"
 - date: 2025-10-11
   text: "*Power of Public Health Advice: Effectiveness and Spillover Effects of Federal Vaccine Recommendations* appears in *Public Health in Practice*, 10. [Paper](/research/#zhao2025advice)"
 - date: 2025-09-02

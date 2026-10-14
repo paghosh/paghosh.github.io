@@ -43,7 +43,7 @@ def coauthors(p):
 
 def pub_item(p):
     venue = r"\emph{%s}" % tex(p["journal"])
-    bits = [venue, tex(p.get("year"))]
+    bits = [venue, "forthcoming" if p["status"] == "forthcoming" else tex(p.get("year"))]
     if p.get("volume"):
         v = tex(p["volume"]) + ("(%s)" % tex(p["issue"]) if p.get("issue") else "")
         bits.append(v)
